@@ -5,7 +5,7 @@ from datetime import datetime
 app = Flask(__name__)
 
 # Load the bus routes CSV
-CSV_PATH = "/Users/joshdweck/Desktop/bus_app/newBusRoutes_Cleaned - BusRoutes_Cleaned.csv"
+CSV_PATH = "/Users/joshdweck/documents/bus_app/newBusRoutes_Cleaned - BusRoutes_Cleaned.csv"
 bus_data = pd.read_csv(CSV_PATH)
 
 # Extract bus stop names from column headers
@@ -31,9 +31,7 @@ DAYS_MAP = {
 }
 
 def parse_day_schedule(day_str):
-    """
-    Parses day ranges from the CSV (e.g., "Monday-Friday") into a list of individual days.
-    """
+    """Parses day ranges from the CSV (e.g., "Monday-Friday") into a list of individual days."""
     if pd.isna(day_str):
         return []  # Handle NaT values gracefully
 
@@ -51,60 +49,60 @@ def index():
     buses = []  # Default empty list for buses
     user_day = None
 
-    if request.method == "POST":
-        start_location = request.form.get("start_location")
-        end_location = request.form.get("end_location")
-        user_time_str = request.form.get("time")
-        user_date_str = request.form.get("date")
+    # Keep selected values persistent
+    start_location = request.form.get("start_location", "Campus")
+    end_location = request.form.get("end_location", "Campus")
+    user_time_str = request.form.get("time", "")
+    user_date_str = request.form.get("date", datetime.today().strftime("%Y-%m-%d"))
 
-        # Convert date to weekday
-        try:
-            user_date = datetime.strptime(user_date_str, "%Y-%m-%d")
-            user_day = DAYS_MAP[user_date.strftime("%A")]  # Convert to single-letter format
-        except ValueError:
-            return jsonify({"error": "Invalid date format. Use YYYY-MM-DD."}), 400
+    # Convert date to weekday
+    try:
+        user_date = datetime.strptime(user_date_str, "%Y-%m-%d")
+        user_day = DAYS_MAP[user_date.strftime("%A")]  # Convert to single-letter format
+    except ValueError:
+        user_day = None  # Ensure it doesn't break
 
-        # Convert input time to datetime.time
-        try:
-            user_time = datetime.strptime(user_time_str, "%I:%M %p").time()
-        except ValueError:
-            return jsonify({"error": "Invalid time format. Use HH:MM AM/PM."}), 400
+    # Convert input time to datetime.time
+    try:
+        user_time = datetime.strptime(user_time_str, "%I:%M %p").time()
+    except ValueError:
+        user_time = None
 
-        # Adjust start and end locations if "Campus" is selected
-        start_locations = CAMPUS_STOPS if start_location == "Campus" else {start_location}
-        end_locations = CAMPUS_STOPS if end_location == "Campus" else {end_location}
+    # Adjust start and end locations if "Campus" is selected
+    start_locations = CAMPUS_STOPS if start_location == "Campus" else {start_location}
+    end_locations = CAMPUS_STOPS if end_location == "Campus" else {end_location}
 
-        # Filter buses based on user input
-        for _, row in bus_data.iterrows():
-            route_name = row["Route"]
-            route_days = row["Day"]
-            valid_days = parse_day_schedule(route_days)
+    # Filter buses based on user input
+    for _, row in bus_data.iterrows():
+        route_name = row["Route"]
+        route_days = row["Day"]
+        valid_days = parse_day_schedule(route_days)
 
-            if user_day not in valid_days:
-                continue  # Skip routes that don’t operate on selected day
+        if user_day not in valid_days:
+            continue  # Skip routes that don’t operate on selected day
 
-            stops_times = [(row[stop], row[f"{stop} Time"]) for stop in stop_columns if pd.notna(row[stop])]
+        stops_times = [(row[stop], row[f"{stop} Time"]) for stop in stop_columns if pd.notna(row[stop])]
 
-            # Find buses that start at the start location and end at the destination
-            for i in range(len(stops_times)):
-                stop_name, start_time = stops_times[i]
+        # Find buses that start at the start location and end at the destination
+        for i in range(len(stops_times)):
+            stop_name, start_time = stops_times[i]
 
-                if stop_name in start_locations and pd.notna(start_time):
-                    # Find the next available stop that matches the destination
-                    for j in range(i + 1, len(stops_times)):
-                        end_stop_name, end_time = stops_times[j]
+            if stop_name in start_locations and pd.notna(start_time):
+                # Find the next available stop that matches the destination
+                for j in range(i + 1, len(stops_times)):
+                    end_stop_name, end_time = stops_times[j]
 
-                        if end_stop_name in end_locations and pd.notna(end_time):
-                            if start_time >= user_time:  # Ensure the bus is after user time
-                                buses.append({
-                                    "route": route_name,
-                                    "start_stop": stop_name,  # Keep actual stop name
-                                    "end_stop": end_stop_name,  # Keep actual stop name
-                                    "start_time": start_time.strftime("%I:%M %p"),
-                                    "end_time": end_time.strftime("%I:%M %p"),
-                                    "sort_time": start_time,  # Used for sorting
-                                })
-                            break  # Stop searching for an end stop after the first match
+                    if end_stop_name in end_locations and pd.notna(end_time):
+                        if user_time is None or start_time >= user_time:  # Ensure the bus is after user time
+                            buses.append({
+                                "route": route_name,
+                                "start_stop": stop_name,  # Keep actual stop name
+                                "end_stop": end_stop_name,  # Keep actual stop name
+                                "start_time": start_time.strftime("%I:%M %p"),
+                                "end_time": end_time.strftime("%I:%M %p"),
+                                "sort_time": start_time,  # Used for sorting
+                            })
+                        break  # Stop searching for an end stop after the first match
 
     # ✅ Sort buses by departure time (earliest first)
     buses = sorted(buses, key=lambda x: x["sort_time"])
@@ -112,7 +110,9 @@ def index():
     # ✅ Ensure "Campus" appears first in dropdowns
     sorted_stops = ["Campus"] + sorted(all_stops - CAMPUS_STOPS)
 
-    return render_template("index.html", stops=sorted_stops, buses=buses)
+    return render_template("index.html", stops=sorted_stops, buses=buses, 
+                           start_location=start_location, end_location=end_location, 
+                           date=user_date_str, time=user_time_str)
 
 if __name__ == "__main__":
     app.run(debug=True)
