@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bus Results</title>
+</head>
+<body>
+    <h1>Available Buses</h1>
+    
+    {% if buses %}
+        <ul>
+        {% for bus, time in buses %}
+            <li><strong>{{ bus }}</strong> - Departs at: {{ time }}</li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No buses found for the selected route and time.</p>
+    {% endif %}
+
+    <br>
+    <a href="/">Back to Search</a>
+</body>
+</html>
