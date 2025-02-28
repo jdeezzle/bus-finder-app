@@ -5,7 +5,9 @@ from datetime import datetime
 app = Flask(__name__)
 
 # Load the bus routes CSV
-CSV_PATH = "/Users/joshdweck/documents/bus_app/newBusRoutes_Cleaned - BusRoutes_Cleaned.csv"
+import os
+
+CSV_PATH = os.path.join(os.getcwd(), "newBusRoutes_Cleaned.csv")
 bus_data = pd.read_csv(CSV_PATH)
 
 # Extract bus stop names from column headers
