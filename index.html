@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Finder</title>
+    <style>
+        /* Light Mode */
+        :root {
+            --bg-color: #f4f4f4;
+            --text-color: #333;
+            --form-bg: white;
+            --input-bg: white;
+            --input-border: #ccc;
+            --button-bg: #007bff;
+            --button-hover: #0056b3;
+            --swap-btn-bg: #ffc107;
+            --swap-btn-hover: #e0a800;
+            --option-bg: white;
+            --option-hover-bg: #007bff;
+            --option-hover-text: white;
+            --separator-bg: #ddd;
+            --separator-text: #666;
+        }
+
+        /* Dark Mode */
+        [data-theme="dark"] {
+            --bg-color: #181818;
+            --text-color: #f4f4f4;
+            --form-bg: #252525;
+            --input-bg: #333;
+            --input-border: #555;
+            --button-bg: #1e90ff;
+            --button-hover: #1565c0;
+            --swap-btn-bg: #ffcc00;
+            --swap-btn-hover: #d4a700;
+            --option-bg: #333;
+            --option-hover-bg: #1e90ff;
+            --option-hover-text: white;
+            --separator-bg: #444;
+            --separator-text: #bbb;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            text-align: center;
+            transition: all 0.3s ease-in-out;
+        }
+        h1 {
+            color: var(--text-color);
+        }
+        form {
+            background: var(--form-bg);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            text-align: left;
+            width: 100%;
+            max-width: 400px;
+            transition: all 0.3s ease-in-out;
+        }
+        label {
+            font-weight: bold;
+        }
+        select, input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 15px;
+            border: 1px solid var(--input-border);
+            border-radius: 5px;
+            font-size: 16px;
+            background: var(--input-bg);
+            color: var(--text-color);
+        }
+        select option {
+            padding: 8px;
+            font-size: 16px;
+            background: var(--option-bg);
+            color: var(--text-color);
+        }
+        select option:hover {
+            background-color: var(--option-hover-bg);
+            color: var(--option-hover-text);
+        }
+        select option.separator {
+            background-color: var(--separator-bg);
+            color: var(--separator-text);
+            font-weight: bold;
+            text-align: center;
+            font-style: italic;
+            pointer-events: none;
+        }
+        button {
+            background: var(--button-bg);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 100%;
+            transition: all 0.3s ease-in-out;
+        }
+        button:hover {
+            background: var(--button-hover);
+        }
+        .swap-btn {
+            background: var(--swap-btn-bg);
+            color: black;
+            font-weight: bold;
+            width: auto;
+            display: block;
+            margin: 10px auto;
+            border-radius: 5px;
+            padding: 8px 12px;
+            border: none;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+        .swap-btn:hover {
+            background: var(--swap-btn-hover);
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background: var(--form-bg);
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Dark Mode Toggle */
+        .theme-toggle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .theme-toggle label {
+            margin-left: 10px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        /* Version info styling */
+        .version-info {
+            font-size: 12px;
+            color: var(--text-color);
+            margin-top: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Find a Bus</h1>
+
+    <!-- Dark Mode Toggle -->
+    <div class="theme-toggle">
+        <label for="theme-switch">🌙 Dark Mode:</label>
+        <input type="checkbox" id="theme-switch">
+    </div>
+
+    <form method="post">
+        <label for="date">Select Date:</label>
+        <input type="date" id="date" name="date" required value="{{ date }}">
+
+        <label for="start_location">Starting Location:</label>
+        <select id="start_location" name="start_location">
+            <option value="Campus" {% if start_location == "Campus" %}selected{% endif %}>Campus</option>
+
+            <option class="separator" disabled>── All Stops ──</option>
+            {% for stop in stops %}
+                <option value="{{ stop }}" {% if stop == start_location %}selected{% endif %}>
+                    {{ stop }}
+                </option>
+            {% endfor %}
+        </select>
+
+        <button type="button" class="swap-btn" onclick="swapLocations()">🔄 Swap Locations</button>
+
+        <label for="end_location">Destination:</label>
+        <select id="end_location" name="end_location">
+            <option value="Campus" {% if end_location == "Campus" %}selected{% endif %}>Campus</option>
+
+            <option class="separator" disabled>── All Stops ──</option>
+            {% for stop in stops %}
+                <option value="{{ stop }}" {% if stop == end_location %}selected{% endif %}>
+                    {{ stop }}
+                </option>
+            {% endfor %}
+        </select>
+
+        <label for="time">Preferred Time:</label>
+        <input type="text" id="time" name="time" placeholder="HH:MM AM/PM" value="{{ time }}">
+
+        <button type="submit">Find Buses</button>
+    </form>
+
+    <h2>Available Buses</h2>
+    {% if buses %}
+        <ul>
+            {% for bus in buses %}
+                <li>
+                    <strong>{{ bus.route }}</strong> <br>
+                    Departure: {{ bus.start_time }} | Arrival: {{ bus.end_time }}
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No buses found for the selected route, time, and day.</p>
+    {% endif %}
+
+    <script>
+        function swapLocations() {
+            let start = document.getElementById("start_location");
+            let end = document.getElementById("end_location");
+            [start.value, end.value] = [end.value, start.value];
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            let savedTheme = localStorage.getItem("theme") || "light";
+            document.documentElement.setAttribute("data-theme", savedTheme);
+            document.getElementById("theme-switch").checked = (savedTheme === "dark");
+
+            document.getElementById("theme-switch").addEventListener("change", function () {
+                document.documentElement.setAttribute("data-theme", this.checked ? "dark" : "light");
+                localStorage.setItem("theme", this.checked ? "dark" : "light");
+            });
+        });
+    </script>
+
+    <footer>
+        <p>Found a bug? <a href="https://docs.google.com/forms/d/e/1FAIpQLSe-XNtcC_qEfU2CD7QOZ-cH-BuVaXoiTyu1-MfiiC0K0U1Wiw/viewform?usp=dialog" target="_blank">Report it here</a></p>
+    </footer>
+
+    <p class="version-info">Version 0.1 <br> Made by Josh Dweck</p>
+
+</body>
+</html>

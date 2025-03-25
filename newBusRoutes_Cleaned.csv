@@ -1,0 +1,482 @@
+Route,Day,Stop 1,Stop 1 Time,Stop 2,Stop 2 Time,Stop 3,Stop 3 Time,Stop 4,Stop 4 Time,Stop 5,Stop 5 Time
+Westside Outbound,Monday-Friday,Union,7:15 AM,Floral & Main,7:24 AM,Main & Murray,7:30 AM,UDC,7:40 AM,,
+Westside Outbound,Monday-Friday,Union,7:50 AM,Floral & Main,7:59 AM,Main & Murray,8:05 AM,UDC,8:15 AM,,
+Westside Outbound,Monday-Friday,Union,8:20 AM,Floral & Main,8:29 AM,Main & Murray,8:35 AM,UDC,8:45 AM,,
+Westside Outbound,Monday-Friday,Union,8:55 AM,Floral & Main,9:04 AM,Main & Murray,9:10 AM,UDC,9:20 AM,,
+Westside Outbound,Monday-Friday,Union,9:45 AM,Floral & Main,9:54 AM,Main & Murray,10:00 AM,UDC,10:10 AM,,
+Westside Outbound,Monday-Friday,Union,10:00 AM,Floral & Main,10:09 AM,Main & Murray,10:15 AM,UDC,10:25 AM,,
+Westside Outbound,Monday-Friday,Union,10:20 AM,Floral & Main,10:29 AM,Main & Murray,10:35 AM,UDC,10:45 AM,,
+Westside Outbound,Monday-Friday,Union,11:25 AM,Floral & Main,11:34 AM,Main & Murray,11:40 AM,UDC,11:50 AM,,
+Westside Outbound,Monday-Friday,Union,11:40 AM,Floral & Main,11:49 AM,Main & Murray,11:55 AM,UDC,12:05 PM,,
+Westside Outbound,Monday-Friday,Union,12:00 PM,Floral & Main,12:09 PM,Main & Murray,12:15 PM,UDC,12:25 PM,,
+Westside Outbound,Monday-Friday,Union,12:15 PM,Floral & Main,12:24 PM,Main & Murray,12:30 PM,UDC,12:40 PM,,
+Westside Outbound,Monday-Friday,Union,12:50 PM,Floral & Main,12:59 PM,Main & Murray,1:05 PM,UDC,1:15 PM,,
+Westside Outbound,Monday-Friday,Union,1:20 PM,Floral & Main,1:29 PM,Main & Murray,1:35 PM,UDC,1:45 PM,,
+Westside Outbound,Monday-Friday,Union,1:55 PM,Floral & Main,2:04 PM,Main & Murray,2:10 PM,UDC,2:20 PM,,
+Westside Outbound,Monday-Friday,Union,2:45 PM,Floral & Main,2:54 PM,Main & Murray,3:00 PM,UDC,3:10 PM,,
+Westside Outbound,Monday-Friday,Union,3:00 PM,Floral & Main,3:09 PM,Main & Murray,3:15 PM,UDC,3:25 PM,,
+Westside Outbound,Monday-Friday,Union,3:20 PM,Floral & Main,3:29 PM,Main & Murray,3:35 PM,UDC,3:45 PM,,
+Westside Outbound,Monday-Friday,Union,4:25 PM,Floral & Main,4:34 PM,Main & Murray,4:40 PM,UDC,4:50 PM,,
+Westside Outbound,Monday-Friday,Union,5:10 PM,Floral & Main,5:19 PM,Main & Murray,5:25 PM,UDC,5:35 PM,,
+Westside Outbound,Monday-Friday,Union,5:45 PM,Floral & Main,5:54 PM,Main & Murray,6:00 PM,UDC,6:10 PM,,
+Westside Outbound,Monday-Friday,Union,6:35 PM,Floral & Main,6:44 PM,Main & Murray,6:50 PM,UDC,7:00 PM,,
+Westside Outbound,Monday-Friday,Union,6:50 PM,Floral & Main,6:59 PM,Main & Murray,7:05 PM,UDC,7:15 PM,,
+Westside Outbound,Monday-Friday,Union,7:25 PM,Floral & Main,7:34 PM,Main & Murray,7:40 PM,UDC,7:50 PM,,
+Westside Outbound,Monday-Friday,Union,8:15 PM,Floral & Main,8:24 PM,Main & Murray,8:30 PM,UDC,8:40 PM,,
+Westside Outbound,Monday-Friday,Union,8:30 PM,Floral & Main,8:39 PM,Main & Murray,8:45 PM,UDC,8:55 PM,,
+Westside Outbound,Monday-Friday,Union,9:45 PM,Floral & Main,9:54 PM,Main & Murray,10:00 PM,UDC,10:10 PM,,
+Westside Outbound,Monday-Friday,Union,10:10 PM,Floral & Main,10:19 PM,Main & Murray,10:25 PM,UDC,10:35 PM,,
+Westside Outbound,Monday-Friday,Union,11:00 PM,Floral & Main,11:09 PM,Main & Murray,11:15 PM,UDC,11:25 PM,,
+Westside Outbound,Monday-Friday,Union,12:00 AM,Floral & Main,12:09 AM,Main & Murray,12:15 AM,UDC,12:25 AM,,
+Downtown Center Leroy Inbound,Monday-Friday,UDC,7:40 AM,Leroy & Murray,7:43 AM,Riverside & Columbus,7:49 AM,Return to Campus,8:00 AM,,
+Downtown Center Leroy Inbound,Monday-Friday,UDC,7:45 AM,Leroy & Murray,7:48 AM,Riverside & Columbus,7:54 AM,Return to Campus,8:05 AM,,
+Downtown Center Leroy Inbound,Monday-Friday,UDC,8:15 AM,Leroy & Murray,8:18 AM,Riverside & Columbus,8:24 AM,Return to Campus,8:35 AM,,
+Downtown Center Leroy Inbound,Monday-Friday,UDC,8:45 AM,Leroy & Murray,8:48 AM,Riverside & Columbus,8:54 AM,Return to Campus,9:05 AM,,
+Downtown Center Leroy Inbound,Monday-Friday,UDC,9:20 AM,Leroy & Murray,9:23 AM,Riverside & Columbus,9:29 AM,Return to Campus,9:40 AM,,
+Downtown Center Leroy Inbound,Monday-Friday,UDC,9:35 AM,Leroy & Murray,9:38 AM,Riverside & Columbus,9:44 AM,Return to Campus,9:55 AM,,
+Downtown Center Leroy Inbound,Monday-Friday,UDC,10:10 AM,Leroy & Murray,10:13 AM,Riverside & Columbus,10:19 AM,Return to Campus,10:30 AM,,
+Downtown Center Leroy Inbound,Monday-Friday,UDC,10:25 AM,Leroy & Murray,10:28 AM,Riverside & Columbus,10:34 AM,Return to Campus,10:45 AM,,
+Downtown Center Leroy Inbound,Monday-Friday,UDC,10:45 AM,Leroy & Murray,10:48 AM,Riverside & Columbus,10:54 AM,Return to Campus,11:05 AM,,
+Downtown Center Leroy Inbound,Monday-Friday,UDC,11:50 AM,Leroy & Murray,11:53 AM,Riverside & Columbus,11:59 AM,Return to Campus,12:10 PM,,
+Downtown Center Leroy Inbound,Monday-Friday,UDC,12:05 PM,Leroy & Murray,12:08 PM,Riverside & Columbus,12:14 PM,Return to Campus,12:25 PM,,
+Downtown Center Leroy Inbound,Monday-Friday,UDC,12:25 PM,Leroy & Murray,12:28 PM,Riverside & Columbus,12:34 PM,Return to Campus,12:45 PM,,
+Downtown Center Leroy Inbound,Monday-Friday,UDC,12:40 PM,Leroy & Murray,12:43 PM,Riverside & Columbus,12:49 PM,Return to Campus,1:00 PM,,
+Downtown Center Leroy Inbound,Monday-Friday,UDC,1:15 PM,Leroy & Murray,1:18 PM,Riverside & Columbus,1:24 PM,Return to Campus,1:35 PM,,
+Downtown Center Leroy Inbound,Monday-Friday,UDC,1:45 PM,Leroy & Murray,1:48 PM,Riverside & Columbus,1:54 PM,Return to Campus,2:05 PM,,
+Downtown Center Leroy Inbound,Monday-Friday,UDC,2:20 PM,Leroy & Murray,2:23 PM,Riverside & Columbus,2:29 PM,Return to Campus,2:40 PM,,
+Downtown Center Leroy Inbound,Monday-Friday,UDC,3:10 PM,Leroy & Murray,3:13 PM,Riverside & Columbus,3:19 PM,Return to Campus,3:30 PM,,
+Downtown Center Leroy Inbound,Monday-Friday,UDC,3:25 PM,Leroy & Murray,3:28 PM,Riverside & Columbus,3:34 PM,Return to Campus,3:45 PM,,
+Downtown Center Leroy Inbound,Monday-Friday,UDC,3:45 PM,Leroy & Murray,3:48 PM,Riverside & Columbus,3:54 PM,Return to Campus,4:05 PM,,
+Downtown Center Leroy Inbound,Monday-Friday,UDC,4:50 PM,Leroy & Murray,4:53 PM,Riverside & Columbus,4:59 PM,Return to Campus,5:10 PM,,
+Downtown Center Leroy Inbound,Monday-Friday,UDC,5:35 PM,Leroy & Murray,5:38 PM,Riverside & Columbus,5:44 PM,Return to Campus,5:55 PM,,
+Downtown Center Leroy Inbound,Monday-Friday,UDC,6:10 PM,Leroy & Murray,6:13 PM,Riverside & Columbus,6:19 PM,Return to Campus,6:30 PM,,
+Downtown Center Leroy Inbound,Monday-Friday,UDC,7:00 PM,Leroy & Murray,7:03 PM,Riverside & Columbus,7:09 PM,Return to Campus,7:20 PM,,
+Downtown Center Leroy Inbound,Monday-Friday,UDC,7:15 PM,Leroy & Murray,7:18 PM,Riverside & Columbus,7:24 PM,Return to Campus,7:35 PM,,
+Downtown Center Leroy Inbound,Monday-Friday,UDC,7:50 PM,Leroy & Murray,7:53 PM,Riverside & Columbus,7:59 PM,Return to Campus,8:10 PM,,
+Downtown Center Leroy Inbound,Monday-Friday,UDC,8:40 PM,Leroy & Murray,8:43 PM,Riverside & Columbus,8:49 PM,Return to Campus,9:00 PM,,
+Downtown Center Leroy Inbound,Monday-Friday,UDC,8:55 PM,Leroy & Murray,8:58 PM,Riverside & Columbus,9:04 PM,Return to Campus,9:15 PM,,
+Downtown Center Leroy Inbound,Monday-Friday,UDC,10:10 PM,Leroy & Murray,10:13 PM,Riverside & Columbus,10:19 PM,Return to Campus,10:30 PM,,
+Downtown Center Leroy Inbound,Monday-Friday,UDC,10:35 PM,Leroy & Murray,10:38 PM,Riverside & Columbus,10:44 PM,Return to Campus,10:55 PM,,
+Downtown Center Leroy Inbound,Monday-Friday,UDC,11:25 PM,Leroy & Murray,11:28 PM,Riverside & Columbus,11:34 PM,Return to Campus,11:45 PM,,
+Downtown Center Leroy Inbound,Monday-Friday,UDC,12:20 AM,Leroy & Murray,12:23 AM,Riverside & Columbus,12:29 AM,Return to Campus,12:40 AM,,
+Downtown Center Leroy Outbound,Monday-Friday,Union,7:00 AM,Riverside & Columbus,7:06 AM,Leroy & Murray,7:11 AM,UDC,7:18 AM,,
+Downtown Center Leroy Outbound,Monday-Friday,Union,7:30 AM,Riverside & Columbus,7:36 AM,Leroy & Murray,7:41 AM,UDC,7:48 AM,,
+Downtown Center Leroy Outbound,Monday-Friday,Union,8:05 AM,Riverside & Columbus,8:11 AM,Leroy & Murray,8:16 AM,UDC,8:23 AM,,
+Downtown Center Leroy Outbound,Monday-Friday,Union,8:40 AM,Riverside & Columbus,8:46 AM,Leroy & Murray,8:51 AM,UDC,8:58 AM,,
+Downtown Center Leroy Outbound,Monday-Friday,Union,9:10 AM,Riverside & Columbus,9:16 AM,Leroy & Murray,9:21 AM,UDC,9:28 AM,,
+Downtown Center Leroy Outbound,Monday-Friday,Union,9:30 AM,Riverside & Columbus,9:36 AM,Leroy & Murray,9:41 AM,UDC,9:48 AM,,
+Downtown Center Leroy Outbound,Monday-Friday,Union,10:35 AM,Riverside & Columbus,10:41 AM,Leroy & Murray,10:46 AM,UDC,10:53 AM,,
+Downtown Center Leroy Outbound,Monday-Friday,Union,10:50 AM,Riverside & Columbus,10:56 AM,Leroy & Murray,11:01 AM,UDC,11:08 AM,,
+Downtown Center Leroy Outbound,Monday-Friday,Union,11:10 AM,Riverside & Columbus,11:16 AM,Leroy & Murray,11:21 AM,UDC,11:28 AM,,
+Downtown Center Leroy Outbound,Monday-Friday,Union,12:00 PM,Riverside & Columbus,12:06 PM,Leroy & Murray,12:11 PM,UDC,12:18 PM,,
+Downtown Center Leroy Outbound,Monday-Friday,Union,12:30 PM,Riverside & Columbus,12:36 PM,Leroy & Murray,12:41 PM,UDC,12:48 PM,,
+Downtown Center Leroy Outbound,Monday-Friday,Union,1:05 PM,Riverside & Columbus,1:11 PM,Leroy & Murray,1:16 PM,UDC,1:23 PM,,
+Downtown Center Leroy Outbound,Monday-Friday,Union,1:40 PM,Riverside & Columbus,1:46 PM,Leroy & Murray,1:51 PM,UDC,1:58 PM,,
+Downtown Center Leroy Outbound,Monday-Friday,Union,2:10 PM,Riverside & Columbus,2:16 PM,Leroy & Murray,2:21 PM,UDC,2:28 PM,,
+Downtown Center Leroy Outbound,Monday-Friday,Union,2:30 PM,Riverside & Columbus,2:36 PM,Leroy & Murray,2:41 PM,UDC,2:48 PM,,
+Downtown Center Leroy Outbound,Monday-Friday,Union,3:35 PM,Riverside & Columbus,3:41 PM,Leroy & Murray,3:46 PM,UDC,3:53 PM,,
+Downtown Center Leroy Outbound,Monday-Friday,Union,4:20 PM,Riverside & Columbus,4:26 PM,Leroy & Murray,4:31 PM,UDC,4:38 PM,,
+Downtown Center Leroy Outbound,Monday-Friday,Union,4:55 PM,Riverside & Columbus,5:01 PM,Leroy & Murray,5:06 PM,UDC,5:13 PM,,
+Downtown Center Leroy Outbound,Monday-Friday,Union,5:30 PM,Riverside & Columbus,5:36 PM,Leroy & Murray,5:41 PM,UDC,5:48 PM,,
+Downtown Center Leroy Outbound,Monday-Friday,Union,6:00 PM,Riverside & Columbus,6:06 PM,Leroy & Murray,6:11 PM,UDC,6:18 PM,,
+Downtown Center Leroy Outbound,Monday-Friday,Union,6:35 PM,Riverside & Columbus,6:41 PM,Leroy & Murray,6:46 PM,UDC,6:53 PM,,
+Downtown Center Leroy Outbound,Monday-Friday,Union,7:25 PM,Riverside & Columbus,7:31 PM,Leroy & Murray,7:36 PM,UDC,7:43 PM,,
+Downtown Center Leroy Outbound,Monday-Friday,Union,7:40 PM,Riverside & Columbus,7:46 PM,Leroy & Murray,7:51 PM,UDC,7:58 PM,,
+Downtown Center Leroy Outbound,Monday-Friday,Union,8:00 PM,Riverside & Columbus,8:06 PM,Leroy & Murray,8:11 PM,UDC,8:15 PM,,
+Downtown Center Leroy Outbound,Monday-Friday,Union,9:00 PM,Riverside & Columbus,9:06 PM,Leroy & Murray,9:11 PM,UDC,9:15 PM,,
+Downtown Center Leroy Outbound,Monday-Friday,Union,9:20 PM,Riverside & Columbus,9:26 PM,Leroy & Murray,9:31 PM,UDC,9:35 PM,,
+Downtown Center Leroy Outbound,Monday-Friday,Union,10:15 PM,Riverside & Columbus,10:21 PM,Leroy & Murray,10:26 PM,UDC,10:30 PM,,
+Downtown Center Leroy Outbound,Monday-Friday,Union,11:15 PM,Riverside & Columbus,11:21 PM,Leroy & Murray,11:26 PM,UDC,11:30 PM,,
+Downtown Center Leroy Outbound,Monday-Friday,Union,12:00 AM,Riverside & Columbus,12:06 AM,Leroy & Murray,12:11 AM,UDC,12:15 AM,,
+Westside Inbound,Monday-Friday,UDC,7:20 AM,Main & Murray,7:23 AM,Floral & Main,7:29 AM,Return to Campus,7:45 AM,,
+Westside Inbound,Monday-Friday,UDC,7:50 AM,Main & Murray,7:53 AM,Floral & Main,7:59 AM,Return to Campus,8:15 AM,,
+Westside Inbound,Monday-Friday,UDC,8:25 AM,Main & Murray,8:28 AM,Floral & Main,8:34 AM,Return to Campus,8:50 AM,,
+Westside Inbound,Monday-Friday,UDC,,Main & Murray,,Floral & Main,8:49 AM,Return to Campus,9:05 AM,,
+Westside Inbound,Monday-Friday,UDC,9:00 AM,Main & Murray,9:03 AM,Floral & Main,9:09 AM,Return to Campus,9:25 AM,,
+Westside Inbound,Monday-Friday,UDC,9:30 AM,Main & Murray,9:33 AM,Floral & Main,9:39 AM,Return to Campus,9:55 AM,,
+Westside Inbound,Monday-Friday,UDC,9:50 AM,Main & Murray,9:53 AM,Floral & Main,9:59 AM,Return to Campus,10:15 AM,,
+Westside Inbound,Monday-Friday,UDC,,Main & Murray,,Floral & Main,10:04 AM,Return to Campus,10:20 AM,,
+Westside Inbound,Monday-Friday,UDC,10:55 AM,Main & Murray,10:58 AM,Floral & Main,11:04 AM,Return to Campus,11:20 AM,,
+Westside Inbound,Monday-Friday,UDC,11:10 AM,Main & Murray,11:13 AM,Floral & Main,11:19 AM,Return to Campus,11:35 AM,,
+Westside Inbound,Monday-Friday,UDC,11:30 AM,Main & Murray,11:33 AM,Floral & Main,11:39 AM,Return to Campus,11:55 AM,,
+Westside Inbound,Monday-Friday,UDC,12:20 PM,Main & Murray,12:23 PM,Floral & Main,12:29 PM,Return to Campus,12:45 PM,,
+Westside Inbound,Monday-Friday,UDC,12:50 PM,Main & Murray,12:53 PM,Floral & Main,12:59 PM,Return to Campus,1:15 PM,,
+Westside Inbound,Monday-Friday,UDC,1:25 PM,Main & Murray,1:28 PM,Floral & Main,1:34 PM,Return to Campus,1:50 PM,,
+Westside Inbound,Monday-Friday,UDC,2:00 PM,Main & Murray,2:03 PM,Floral & Main,2:09 PM,Return to Campus,2:25 PM,,
+Westside Inbound,Monday-Friday,UDC,2:30 PM,Main & Murray,2:33 PM,Floral & Main,2:39 PM,Return to Campus,2:55 PM,,
+Westside Inbound,Monday-Friday,UDC,2:50 PM,Main & Murray,2:53 PM,Floral & Main,2:59 PM,Return to Campus,3:15 PM,,
+Westside Inbound,Monday-Friday,UDC,3:55 PM,Main & Murray,3:58 PM,Floral & Main,4:04 PM,Return to Campus,4:20 PM,,
+Westside Inbound,Monday-Friday,UDC,4:40 PM,Main & Murray,4:43 PM,Floral & Main,4:49 PM,Return to Campus,5:05 PM,,
+Westside Inbound,Monday-Friday,UDC,5:15 PM,Main & Murray,5:18 PM,Floral & Main,5:24 PM,Return to Campus,5:40 PM,,
+Westside Inbound,Monday-Friday,UDC,5:50 PM,Main & Murray,5:53 PM,Floral & Main,5:59 PM,Return to Campus,6:15 PM,,
+Westside Inbound,Monday-Friday,UDC,6:20 PM,Main & Murray,6:23 PM,Floral & Main,6:29 PM,Return to Campus,6:45 PM,,
+Westside Inbound,Monday-Friday,UDC,6:55 PM,Main & Murray,6:58 PM,Floral & Main,7:04 PM,Return to Campus,7:20 PM,,
+Westside Inbound,Monday-Friday,UDC,7:45 PM,Main & Murray,7:48 PM,Floral & Main,7:54 PM,Return to Campus,8:10 PM,,
+Westside Inbound,Monday-Friday,UDC,8:00 PM,Main & Murray,8:03 PM,Floral & Main,8:09 PM,Return to Campus,8:25 PM,,
+Westside Inbound,Monday-Friday,UDC,8:15 PM,Main & Murray,8:18 PM,Floral & Main,8:24 PM,Return to Campus,8:40 PM,,
+Westside Inbound,Monday-Friday,UDC,9:15 PM,Main & Murray,9:18 PM,Floral & Main,9:24 PM,Return to Campus,9:40 PM,,
+Westside Inbound,Monday-Friday,UDC,9:35 PM,Main & Murray,9:38 PM,Floral & Main,9:44 PM,Return to Campus,10:00 PM,,
+Westside Inbound,Monday-Friday,UDC,10:30 PM,Main & Murray,10:33 PM,Floral & Main,10:39 PM,Return to Campus,10:55 PM,,
+Westside Inbound,Monday-Friday,UDC,11:30 PM,Main & Murray,11:33 PM,Floral & Main,11:39 PM,Return to Campus,11:55 PM,,
+Westside Inbound,Monday-Friday,UDC,12:15 AM,Main & Murray,12:18 AM,Floral & Main,12:24 AM,Return to Campus,12:40 AM,,
+University Downtown Center Outbound,Monday-Friday,Union,7:00 AM,UDC,7:15 AM,,,,,,
+University Downtown Center Outbound,Monday-Friday,Union,7:30 AM,UDC,7:45 AM,,,,,,
+University Downtown Center Outbound,Monday-Friday,Union,8:05 AM,UDC,8:20 AM,,,,,,
+University Downtown Center Outbound,Monday-Friday,Union,8:10 AM,UDC,8:25 AM,,,,,,
+University Downtown Center Outbound,Monday-Friday,Union,8:40 AM,UDC,8:55 AM,,,,,,
+University Downtown Center Outbound,Monday-Friday,Union,9:20 AM,UDC,9:35 AM,,,,,,
+University Downtown Center Outbound,Monday-Friday,Union,9:30 AM,UDC,9:45 AM,,,,,,
+University Downtown Center Outbound,Monday-Friday,Union,10:25 AM,UDC,10:40 AM,,,,,,
+University Downtown Center Outbound,Monday-Friday,Union,10:35 AM,UDC,10:50 AM,,,,,,
+University Downtown Center Outbound,Monday-Friday,Union,11:10 AM,UDC,11:25 AM,,,,,,
+University Downtown Center Outbound,Monday-Friday,Union,11:25 AM,UDC,11:40 AM,,,,,,
+University Downtown Center Outbound,Monday-Friday,Union,12:00 PM,UDC,12:15 PM,,,,,,
+University Downtown Center Outbound,Monday-Friday,Union,12:45 PM,UDC,1:00 PM,,,,,,
+University Downtown Center Outbound,Monday-Friday,Union,1:05 PM,UDC,1:20 PM,,,,,,
+University Downtown Center Outbound,Monday-Friday,Union,1:40 PM,UDC,1:55 PM,,,,,,
+University Downtown Center Outbound,Monday-Friday,Union,2:30 PM,UDC,2:45 PM,,,,,,
+University Downtown Center Outbound,Monday-Friday,Union,3:35 PM,UDC,3:50 PM,,,,,,
+University Downtown Center Outbound,Monday-Friday,Union,4:40 PM,UDC,4:55 PM,,,,,,
+University Downtown Center Outbound,Monday-Friday,Union,5:45 PM,UDC,6:00 PM,,,,,,
+University Downtown Center Outbound,Monday-Friday,Union,6:05 PM,UDC,6:20 PM,,,,,,
+University Downtown Center Outbound,Monday-Friday,Union,7:10 PM,UDC,7:25 PM,,,,,,
+University Downtown Center Outbound,Monday-Friday,Union,9:00 PM,UDC,9:15 PM,,,,,,
+Main Street Inbound,Monday-Friday,UDC,7:15 AM,Main & Murray,7:18 AM,Main & Floral,7:24 AM,Pharmacy School,7:27 AM,Return to Campus,7:45 AM
+Main Street Inbound,Monday-Friday,UDC,8:20 AM,Main & Murray,8:23 AM,Main & Floral,8:29 AM,Pharmacy School,8:32 AM,Return to Campus,8:50 AM
+Main Street Inbound,Monday-Friday,UDC,8:55 AM,Main & Murray,8:58 AM,Main & Floral,9:04 AM,Pharmacy School,9:07 AM,Return to Campus,9:25 AM
+Main Street Inbound,Monday-Friday,UDC,9:45 AM,Main & Murray,9:48 AM,Main & Floral,9:54 AM,Pharmacy School,9:57 AM,Return to Campus,10:15 AM
+Main Street Inbound,Monday-Friday,UDC,10:50 AM,Main & Murray,10:53 AM,Main & Floral,10:59 AM,Pharmacy School,11:02 AM,Return to Campus,11:20 AM
+Main Street Inbound,Monday-Friday,UDC,11:25 AM,Main & Murray,11:28 AM,Main & Floral,11:34 AM,Pharmacy School,11:37 AM,Return to Campus,11:55 AM
+Main Street Inbound,Monday-Friday,UDC,12:15 PM,Main & Murray,12:18 PM,Main & Floral,12:24 PM,Pharmacy School,12:27 PM,Return to Campus,12:45 PM
+Main Street Inbound,Monday-Friday,UDC,1:20 PM,Main & Murray,1:23 PM,Main & Floral,1:29 PM,Pharmacy School,1:32 PM,Return to Campus,1:50 PM
+Main Street Inbound,Monday-Friday,UDC,1:55 PM,Main & Murray,1:58 PM,Main & Floral,2:04 PM,Pharmacy School,2:07 PM,Return to Campus,2:25 PM
+Main Street Inbound,Monday-Friday,UDC,2:45 PM,Main & Murray,2:48 PM,Main & Floral,2:54 PM,Pharmacy School,2:57 PM,Return to Campus,3:15 PM
+Main Street Inbound,Monday-Friday,UDC,3:50 PM,Main & Murray,3:53 PM,Main & Floral,3:59 PM,Pharmacy School,4:02 PM,Return to Campus,4:20 PM
+Main Street Inbound,Monday-Friday,UDC,4:55 PM,Main & Murray,4:58 PM,Main & Floral,5:04 PM,Pharmacy School,5:07 PM,Return to Campus,5:25 PM
+Main Street Inbound,Monday-Friday,UDC,6:00 PM,Main & Murray,6:03 PM,Main & Floral,6:09 PM,Pharmacy School,6:12 PM,Return to Campus,6:30 PM
+Main Street Inbound,Monday-Friday,UDC,7:25 PM,Main & Murray,7:28 PM,Main & Floral,7:34 PM,Pharmacy School,7:37 PM,Return to Campus,7:55 PM
+Main Street Inbound,Monday-Friday,UDC,9:15 PM,Main & Murray,9:18 PM,Main & Floral,9:24 PM,Pharmacy School,9:27 PM,Return to Campus,9:45 PM
+Main Street Outbound,Monday-Friday,Union,7:15 AM,Pharmacy School,7:24 AM,Main & Floral,7:27 AM,Main & Murray,7:33 AM,UDC,7:45 AM
+Main Street Outbound,Monday-Friday,Union,7:50 AM,Pharmacy School,7:59 AM,Main & Floral,8:02 AM,Main & Murray,8:08 AM,UDC,8:20 AM
+Main Street Outbound,Monday-Friday,Union,8:55 AM,Pharmacy School,9:04 AM,Main & Floral,9:07 AM,Main & Murray,9:13 AM,UDC,9:25 AM
+Main Street Outbound,Monday-Friday,Union,9:45 AM,Pharmacy School,9:54 AM,Main & Floral,9:57 AM,Main & Murray,10:03 AM,UDC,10:15 AM
+Main Street Outbound,Monday-Friday,Union,10:20 AM,Pharmacy School,10:29 AM,Main & Floral,10:32 AM,Main & Murray,10:38 AM,UDC,10:50 AM
+Main Street Outbound,Monday-Friday,Union,11:25 AM,Pharmacy School,11:34 AM,Main & Floral,11:37 AM,Main & Murray,11:43 AM,UDC,11:55 AM
+Main Street Outbound,Monday-Friday,Union,12:15 PM,Pharmacy School,12:24 PM,Main & Floral,12:27 PM,Main & Murray,12:33 PM,UDC,12:45 PM
+Main Street Outbound,Monday-Friday,Union,12:50 PM,Pharmacy School,12:59 PM,Main & Floral,1:02 PM,Main & Murray,1:08 PM,UDC,1:20 PM
+Main Street Outbound,Monday-Friday,Union,1:55 PM,Pharmacy School,2:04 PM,Main & Floral,2:07 PM,Main & Murray,2:13 PM,UDC,2:25 PM
+Main Street Outbound,Monday-Friday,Union,2:45 PM,Pharmacy School,2:54 PM,Main & Floral,2:57 PM,Main & Murray,3:03 PM,UDC,3:15 PM
+Main Street Outbound,Monday-Friday,Union,3:50 PM,Pharmacy School,3:59 PM,Main & Floral,4:02 PM,Main & Murray,4:08 PM,UDC,4:20 PM
+Main Street Outbound,Monday-Friday,Union,4:25 PM,Pharmacy School,4:34 PM,Main & Floral,4:37 PM,Main & Murray,4:43 PM,UDC,4:55 PM
+Main Street Outbound,Monday-Friday,Union,5:15 PM,Pharmacy School,5:24 PM,Main & Floral,5:27 PM,Main & Murray,5:33 PM,UDC,5:45 PM
+Main Street Outbound,Monday-Friday,Union,6:20 PM,Pharmacy School,6:29 PM,Main & Floral,6:32 PM,Main & Murray,6:38 PM,UDC,6:50 PM
+Main Street Outbound,Monday-Friday,Union,7:25 PM,Pharmacy School,7:34 PM,Main & Floral,7:37 PM,Main & Murray,7:43 PM,UDC,7:55 PM
+Main Street Outbound,Monday-Friday,Union,8:15 PM,Pharmacy School,8:24 PM,Main & Floral,8:27 PM,Main & Murray,8:33 PM,UDC,8:45 PM
+Main Street Outbound,Monday-Friday,Union,8:45 PM,Pharmacy School,8:54 PM,Main & Floral,8:57 PM,Main & Murray,9:03 PM,UDC,9:15 PM
+Main Street Outbound,Monday-Thursday,Union,10:00 PM,Pharmacy School,10:09 PM,Main & Floral,10:12 PM,Main & Murray,10:18 PM,UDC,10:30 PM
+University Downtown Center Inbound,Monday-Friday,UDC,7:45 AM,Return to Campus,8:00 AM,,,,,,
+University Downtown Center Inbound,Monday-Friday,UDC,8:20 AM,Return to Campus,8:35 AM,,,,,,
+University Downtown Center Inbound,Monday-Friday,UDC,8:25 AM,Return to Campus,8:40 AM,,,,,,
+University Downtown Center Inbound,Monday-Friday,UDC,9:25 AM,Return to Campus,9:40 AM,,,,,,
+University Downtown Center Inbound,Monday-Friday,UDC,10:15 AM,Return to Campus,10:30 AM,,,,,,
+University Downtown Center Inbound,Monday-Friday,UDC,10:40 AM,Return to Campus,10:55 AM,,,,,,
+University Downtown Center Inbound,Monday-Friday,UDC,10:50 AM,Return to Campus,11:05 AM,,,,,,
+University Downtown Center Inbound,Monday-Friday,UDC,11:40 AM,Return to Campus,11:55 AM,,,,,,
+University Downtown Center Inbound,Monday-Friday,UDC,11:55 AM,Return to Campus,12:10 PM,,,,,,
+University Downtown Center Inbound,Monday-Friday,UDC,12:45 PM,Return to Campus,1:00 PM,,,,,,
+University Downtown Center Inbound,Monday-Friday,UDC,1:00 PM,Return to Campus,1:15 PM,,,,,,
+University Downtown Center Inbound,Monday-Friday,UDC,1:20 PM,Return to Campus,1:35 PM,,,,,,
+University Downtown Center Inbound,Monday-Friday,UDC,2:25 PM,Return to Campus,2:40 PM,,,,,,
+University Downtown Center Inbound,Monday-Friday,UDC,3:15 PM,Return to Campus,3:30 PM,,,,,,
+University Downtown Center Inbound,Monday-Friday,UDC,4:20 PM,Return to Campus,4:35 PM,,,,,,
+University Downtown Center Inbound,Monday-Friday,UDC,4:55 PM,Return to Campus,5:10 PM,,,,,,
+University Downtown Center Inbound,Monday-Friday,UDC,5:45 PM,Return to Campus,6:00 PM,,,,,,
+University Downtown Center Inbound,Monday-Friday,UDC,6:20 PM,Return to Campus,6:35 PM,,,,,,
+University Downtown Center Inbound,Monday-Friday,UDC,6:50 PM,Return to Campus,7:05 PM,,,,,,
+University Downtown Center Inbound,Monday-Friday,UDC,7:05 PM,Return to Campus,7:20 PM,,,,,,
+University Downtown Center Inbound,Monday-Friday,UDC,7:55 PM,Return to Campus,8:10 PM,,,,,,
+University Downtown Center Inbound,Monday-Friday,UDC,8:45 PM,Return to Campus,9:00 PM,,,,,,
+University Downtown Center Inbound,Monday-Friday,UDC,9:15 PM,Return to Campus,9:30 PM,,,,,,
+University Downtown Center Inbound,Monday-Friday,UDC,10:00 PM,Return to Campus,10:15 PM,,,,,,
+University Downtown Center Inbound,Monday-Thursday,UDC,10:30 PM,Return to Campus,10:45 PM,,,,,,
+University Downtown Center Inbound,Monday-Thursday,UDC,11:00 PM,Return to Campus,11:15 PM,,,,,,
+Downtown Southside Outbound,Monday-Friday,Union,6:35 PM,Conklin & S. Washington,6:43 PM,Conklin & S. Washington,6:46 PM,BC Junction,6:50 PM,UDC,7:00 PM
+Downtown Southside Outbound,Monday-Friday,Union,8:15 PM,Conklin & S. Washington,8:23 PM,Conklin & S. Washington,8:26 PM,BC Junction,8:30 PM,UDC,8:40 PM
+Downtown Southside Outbound,Monday-Friday,Union,9:30 PM,Conklin & S. Washington,9:38 PM,Conklin & S. Washington,9:41 PM,BC Junction,9:45 PM,UDC,9:55 PM
+Downtown Southside Outbound,Monday-Thursday,Union,10:30 PM,Conklin & S. Washington,10:38 PM,Conklin & S. Washington,10:41 PM,BC Junction,10:45 PM,UDC,10:55 PM
+ITC-UClub Shuttle,Monday-Friday,Mohawk,7:30 AM,ITC,7:35 AM,UClub,7:40 AM,Meadows & Hayes,7:42 AM,Mohawk,7:52 AM
+ITC-UClub Shuttle,Monday-Friday,Mohawk,8:00 AM,ITC,8:05 AM,UClub,8:10 AM,Meadows & Hayes,8:12 AM,Mohawk,8:22 AM
+ITC-UClub Shuttle,Monday-Friday,Mohawk,8:30 AM,ITC,8:35 AM,UClub,8:40 AM,Meadows & Hayes,8:42 AM,Mohawk,8:52 AM
+ITC-UClub Shuttle,Monday-Friday,Mohawk,9:00 AM,ITC,9:05 AM,UClub,9:10 AM,Meadows & Hayes,9:12 AM,Mohawk,9:22 AM
+ITC-UClub Shuttle,Monday-Friday,Mohawk,9:30 AM,ITC,9:35 AM,UClub,9:40 AM,Meadows & Hayes,9:42 AM,Mohawk,9:52 AM
+ITC-UClub Shuttle,Monday-Friday,Mohawk,10:00 AM,ITC,10:05 AM,UClub,10:10 AM,Meadows & Hayes,10:12 AM,Mohawk,10:22 AM
+ITC-UClub Shuttle,Monday-Friday,Mohawk,10:30 AM,ITC,10:35 AM,UClub,10:40 AM,Meadows & Hayes,10:42 AM,Mohawk,10:52 AM
+ITC-UClub Shuttle,Monday-Friday,Mohawk,11:00 AM,ITC,11:05 AM,UClub,11:10 AM,Meadows & Hayes,11:12 AM,Mohawk,11:22 AM
+ITC-UClub Shuttle,Monday-Friday,Mohawk,11:30 AM,ITC,11:35 AM,UClub,11:40 AM,Meadows & Hayes,11:42 AM,Mohawk,11:52 AM
+ITC-UClub Shuttle,Monday-Friday,Mohawk,12:00 PM,ITC,12:05 PM,UClub,12:10 PM,Meadows & Hayes,12:12 PM,Mohawk,12:22 PM
+ITC-UClub Shuttle,Monday-Friday,Mohawk,12:30 PM,ITC,12:35 PM,UClub,12:40 PM,Meadows & Hayes,12:42 PM,Mohawk,12:52 PM
+ITC-UClub Shuttle,Monday-Friday,Mohawk,1:00 PM,ITC,1:05 PM,UClub,1:10 PM,Meadows & Hayes,1:12 PM,Mohawk,1:22 PM
+ITC-UClub Shuttle,Monday-Friday,Mohawk,1:30 PM,ITC,1:35 PM,UClub,1:40 PM,Meadows & Hayes,1:42 PM,Mohawk,1:52 PM
+ITC-UClub Shuttle,Monday-Friday,Mohawk,2:00 PM,ITC,2:05 PM,UClub,2:10 PM,Meadows & Hayes,2:12 PM,Mohawk,2:22 PM
+ITC-UClub Shuttle,Monday-Friday,Mohawk,2:30 PM,ITC,2:35 PM,UClub,2:40 PM,Meadows & Hayes,2:42 PM,Mohawk,2:52 PM
+ITC-UClub Shuttle,Monday-Friday,Mohawk,3:00 PM,ITC,3:05 PM,UClub,3:10 PM,Meadows & Hayes,3:12 PM,Mohawk,3:22 PM
+ITC-UClub Shuttle,Monday-Friday,Mohawk,3:30 PM,ITC,3:35 PM,UClub,3:40 PM,Meadows & Hayes,3:42 PM,Mohawk,3:52 PM
+ITC-UClub Shuttle,Monday-Friday,Mohawk,4:00 PM,ITC,4:05 PM,UClub,4:10 PM,Meadows & Hayes,4:12 PM,Mohawk,4:22 PM
+ITC-UClub Shuttle,Monday-Friday,Mohawk,4:30 PM,ITC,4:35 PM,UClub,4:40 PM,Meadows & Hayes,4:42 PM,Mohawk,4:52 PM
+ITC-UClub Shuttle,Monday-Friday,Mohawk,5:00 PM,ITC,5:05 PM,UClub,5:10 PM,Meadows & Hayes,5:12 PM,Mohawk,5:22 PM
+ITC-UClub Shuttle,Monday-Friday,Mohawk,5:30 PM,ITC,5:35 PM,UClub,5:40 PM,Meadows & Hayes,5:42 PM,Mohawk,5:52 PM
+ITC-UClub Shuttle,Monday-Friday,Mohawk,6:00 PM,ITC,6:05 PM,UClub,6:10 PM,Meadows & Hayes,6:12 PM,Mohawk,6:22 PM
+ITC-UClub Shuttle,Monday-Friday,Mohawk,6:30 PM,ITC,6:35 PM,UClub,6:40 PM,Meadows & Hayes,6:42 PM,Mohawk,6:52 PM
+ITC-UClub Shuttle,Monday-Friday,Mohawk,7:00 PM,ITC,7:05 PM,UClub,7:10 PM,Meadows & Hayes,7:12 PM,Mohawk,7:22 PM
+ITC-UClub Shuttle,Monday-Friday,Mohawk,7:30 PM,ITC,7:35 PM,UClub,7:40 PM,Meadows & Hayes,7:42 PM,Mohawk,7:52 PM
+ITC-UClub Shuttle,Monday-Friday,Mohawk,8:00 PM,ITC,8:05 PM,UClub,8:10 PM,Meadows & Hayes,8:12 PM,Mohawk,8:22 PM
+ITC-UClub Shuttle,Monday-Friday,Mohawk,8:30 PM,ITC,8:35 PM,UClub,8:40 PM,Meadows & Hayes,8:42 PM,Mohawk,8:52 PM
+ITC-UClub Shuttle,Monday-Friday,Mohawk,9:00 PM,ITC,9:05 PM,UClub,9:10 PM,Meadows & Hayes,9:12 PM,Mohawk,9:22 PM
+ITC-UClub Shuttle,Monday-Friday,Mohawk,9:30 PM,ITC,9:35 PM,UClub,9:40 PM,Meadows & Hayes,9:42 PM,Mohawk,9:52 PM
+UClub Shuttle,Monday-Friday,Mohawk,9:45 PM,UClub,9:50 PM,Washington & Lehigh,9:54 PM,,,,
+UClub Shuttle,Friday,Mohawk,10:30 PM,UClub,10:35 PM,Washington & Lehigh,10:39 PM,,,,
+UClub Shuttle,Monday-Thursday,Mohawk,10:45 PM,UClub,10:50 PM,Washington & Lehigh,10:54 PM,,,,
+UClub Shuttle,Friday,Mohawk,11:00 PM,UClub,11:05 PM,Washington & Lehigh,11:09 PM,,,,
+UClub Shuttle,Monday-Friday,Mohawk,11:45 PM,UClub,11:50 PM,Washington & Lehigh,11:54 PM,,,,
+Riviera Ridge - Town Square,Monday-Friday,Rafuse,3:00 PM,Parkway Plaza (Target),3:09 PM,Town Square Mall (Walmart),3:15 PM,Return to Campus,3:25 PM,,
+Riviera Ridge - Town Square,Monday-Friday,Rafuse,4:00 PM,Parkway Plaza (Target),4:09 PM,Town Square Mall (Walmart),4:15 PM,Return to Campus,4:25 PM,,
+Riviera Ridge - Town Square,Monday-Friday,Rafuse,5:00 PM,Parkway Plaza (Target),5:09 PM,Town Square Mall (Walmart),5:15 PM,Return to Campus,5:25 PM,,
+Riviera Ridge - Town Square,Monday-Friday,Rafuse,6:00 PM,Parkway Plaza (Target),6:09 PM,Town Square Mall (Walmart),6:15 PM,Return to Campus,6:25 PM,,
+Riviera Ridge - Town Square,Monday-Friday,Rafuse,7:00 PM,Parkway Plaza (Target),7:09 PM,Town Square Mall (Walmart),7:15 PM,Return to Campus,7:25 PM,,
+Riviera Ridge - Town Square,Monday-Friday,Rafuse,8:00 PM,Parkway Plaza (Target),8:09 PM,Town Square Mall (Walmart),8:15 PM,Return to Campus,8:25 PM,,
+Riviera Ridge - Town Square,Monday-Friday,Rafuse,9:00 PM,Parkway Plaza (Target),9:09 PM,Town Square Mall (Walmart),9:15 PM,Return to Campus,9:25 PM,,
+Riviera Ridge - Town Square,Monday-Friday,Rafuse,10:00 PM,Parkway Plaza (Target),10:09 PM,Town Square Mall (Walmart),10:10 PM,Return to Campus,10:20 PM,,
+Oakdale Commons Shuttle,Monday-Friday,Rafuse,3:30 PM,Oakdale Commons,3:39 PM,Wegmans,3:45 PM,Return to Campus,3:58 PM,,
+Oakdale Commons Shuttle,Monday-Friday,Rafuse,4:30 PM,Oakdale Commons,4:39 PM,Wegmans,4:45 PM,Return to Campus,4:58 PM,,
+Oakdale Commons Shuttle,Monday-Friday,Rafuse,5:30 PM,Oakdale Commons,5:39 PM,Wegmans,5:45 PM,Return to Campus,5:58 PM,,
+Oakdale Commons Shuttle,Monday-Friday,Rafuse,6:30 PM,Oakdale Commons,6:39 PM,Wegmans,6:45 PM,Return to Campus,6:58 PM,,
+Oakdale Commons Shuttle,Monday-Friday,Rafuse,7:30 PM,Oakdale Commons,7:39 PM,Wegmans,7:45 PM,Return to Campus,7:58 PM,,
+Oakdale Commons Shuttle,Monday-Friday,Rafuse,8:30 PM,Oakdale Commons,8:39 PM,Wegmans,8:45 PM,Return to Campus,8:58 PM,,
+Oakdale Commons Shuttle,Monday-Friday,Rafuse,9:30 PM,Oakdale Commons,9:39 PM,Wegmans,9:45 PM,Return to Campus,9:58 PM,,
+Oakdale Commons Shuttle,Monday-Friday,Rafuse,10:30 PM,Oakdale Commons,10:39 PM,Wegmans,10:45 PM,Return to Campus,10:58 PM,,
+Westside Outbound,Saturday-Sunday,Union,10:30 AM,Floral & Main,10:39 AM,Main & Murray,10:45 AM,UDC,10:55 AM,,
+Westside Outbound,Saturday-Sunday,Union,11:00 AM,Floral & Main,11:09 AM,Main & Murray,11:15 AM,UDC,11:25 AM,,
+Westside Outbound,Saturday-Sunday,Union,12:15 PM,Floral & Main,12:24 PM,Main & Murray,12:30 PM,UDC,12:40 PM,,
+Westside Outbound,Saturday-Sunday,Union,1:00 PM,Floral & Main,1:09 PM,Main & Murray,1:15 PM,UDC,1:25 PM,,
+Westside Outbound,Saturday-Sunday,Union,2:00 PM,Floral & Main,2:09 PM,Main & Murray,2:15 PM,UDC,2:25 PM,,
+Westside Outbound,Saturday-Sunday,Union,2:45 PM,Floral & Main,2:54 PM,Main & Murray,3:00 PM,UDC,3:10 PM,,
+Westside Outbound,Saturday-Sunday,Union,3:30 PM,Floral & Main,3:39 PM,Main & Murray,3:45 PM,UDC,3:55 PM,,
+Westside Outbound,Saturday-Sunday,Union,4:30 PM,Floral & Main,4:39 PM,Main & Murray,4:45 PM,UDC,4:55 PM,,
+Westside Outbound,Saturday-Sunday,Union,5:30 PM,Floral & Main,5:39 PM,Main & Murray,5:45 PM,UDC,5:55 PM,,
+Westside Outbound,Saturday-Sunday,Union,5:45 PM,Floral & Main,5:54 PM,Main & Murray,6:00 PM,UDC,6:10 PM,,
+Westside Outbound,Saturday-Sunday,Union,6:45 PM,Floral & Main,6:54 PM,Main & Murray,7:00 PM,UDC,7:10 PM,,
+Westside Outbound,Saturday-Sunday,Union,7:30 PM,Floral & Main,7:39 PM,Main & Murray,7:45 PM,UDC,7:55 PM,,
+Westside Outbound,Saturday-Sunday,Union,8:30 PM,Floral & Main,8:39 PM,Main & Murray,8:45 PM,UDC,8:55 PM,,
+Westside Outbound,Sunday,Union,9:15 PM,Floral & Main,9:24 PM,Main & Murray,9:30 PM,UDC,9:40 PM,,
+Westside Outbound,Saturday,Union,9:45 PM,Floral & Main,9:54 PM,Main & Murray,10:00 PM,UDC,10:10 PM,,
+Westside Outbound,Sunday,Union,10:00 PM,Floral & Main,10:09 PM,Main & Murray,10:15 PM,UDC,10:25 PM,,
+Westside Outbound,Saturday-Sunday,Union,10:45 PM,Floral & Main,10:54 PM,Main & Murray,11:00 PM,UDC,11:10 PM,,
+Westside Outbound,Saturday-Sunday,Union,11:15 PM,Floral & Main,11:24 PM,Main & Murray,11:30 PM,UDC,11:40 PM,,
+Westside Outbound,Sunday,Union,11:30 PM,Floral & Main,11:39 PM,Main & Murray,11:45 PM,UDC,11:55 PM,,
+Downtown Center Leroy Inbound,Saturday-Sunday,UDC,10:55 AM,Leroy & Murray,10:58 AM,Riverside & Columbus,11:04 AM,Return to Campus,11:15 AM,,
+Downtown Center Leroy Inbound,Saturday-Sunday,UDC,11:25 AM,Leroy & Murray,11:28 AM,Riverside & Columbus,11:34 AM,Return to Campus,11:45 AM,,
+Downtown Center Leroy Inbound,Saturday-Sunday,UDC,12:40 PM,Leroy & Murray,12:43 PM,Riverside & Columbus,12:49 PM,Return to Campus,1:00 PM,,
+Downtown Center Leroy Inbound,Saturday-Sunday,UDC,1:25 PM,Leroy & Murray,1:28 PM,Riverside & Columbus,1:34 PM,Return to Campus,1:45 PM,,
+Downtown Center Leroy Inbound,Saturday-Sunday,UDC,2:25 PM,Leroy & Murray,2:28 PM,Riverside & Columbus,2:34 PM,Return to Campus,2:45 PM,,
+Downtown Center Leroy Inbound,Saturday-Sunday,UDC,3:10 PM,Leroy & Murray,3:13 PM,Riverside & Columbus,3:19 PM,Return to Campus,3:30 PM,,
+Downtown Center Leroy Inbound,Saturday-Sunday,UDC,3:55 PM,Leroy & Murray,3:58 PM,Riverside & Columbus,4:04 PM,Return to Campus,4:15 PM,,
+Downtown Center Leroy Inbound,Saturday-Sunday,UDC,4:55 PM,Leroy & Murray,4:58 PM,Riverside & Columbus,5:04 PM,Return to Campus,5:15 PM,,
+Downtown Center Leroy Inbound,Saturday-Sunday,UDC,5:55 PM,Leroy & Murray,5:58 PM,Riverside & Columbus,6:04 PM,Return to Campus,6:15 PM,,
+Downtown Center Leroy Inbound,Saturday-Sunday,UDC,6:10 PM,Leroy & Murray,6:13 PM,Riverside & Columbus,6:19 PM,Return to Campus,6:30 PM,,
+Downtown Center Leroy Inbound,Saturday-Sunday,UDC,7:10 PM,Leroy & Murray,7:13 PM,Riverside & Columbus,7:19 PM,Return to Campus,7:30 PM,,
+Downtown Center Leroy Inbound,Saturday-Sunday,UDC,7:55 PM,Leroy & Murray,7:58 PM,Riverside & Columbus,8:04 PM,Return to Campus,8:15 PM,,
+Downtown Center Leroy Inbound,Saturday-Sunday,UDC,8:55 PM,Leroy & Murray,8:58 PM,Riverside & Columbus,9:04 PM,Return to Campus,9:15 PM,,
+Downtown Center Leroy Inbound,Sunday,UDC,9:40 PM,Leroy & Murray,9:43 PM,Riverside & Columbus,9:49 PM,Return to Campus,10:00 PM,,
+Downtown Center Leroy Inbound,Saturday,UDC,10:10 PM,Leroy & Murray,10:13 PM,Riverside & Columbus,10:19 PM,Return to Campus,10:30 PM,,
+Downtown Center Leroy Inbound,Sunday,UDC,10:25 PM,Leroy & Murray,10:28 PM,Riverside & Columbus,10:34 PM,Return to Campus,10:45 PM,,
+Downtown Center Leroy Inbound,Saturday-Sunday,UDC,11:10 PM,Leroy & Murray,11:13 PM,Riverside & Columbus,11:19 PM,Return to Campus,11:30 PM,,
+Downtown Center Leroy Inbound,Saturday-Sunday,UDC,11:40 PM,Leroy & Murray,11:43 PM,Riverside & Columbus,11:49 PM,Return to Campus,12:00 AM,,
+Downtown Center Leroy Inbound,Sunday,UDC,11:55 PM,Leroy & Murray,11:58 PM,Riverside & Columbus,12:04 AM,Return to Campus,12:15 AM,,
+Downtown Center Leroy Outbound,Saturday-Sunday,Union,8:45 AM,Riverside & Columbus,8:51 AM,Leroy & Murray,8:56 AM,UDC,9:03 AM,,
+Downtown Center Leroy Outbound,Saturday-Sunday,Union,9:45 AM,Riverside & Columbus,9:51 AM,Leroy & Murray,9:56 AM,UDC,10:03 AM,,
+Downtown Center Leroy Outbound,Saturday-Sunday,Union,10:45 AM,Riverside & Columbus,10:51 AM,Leroy & Murray,10:56 AM,UDC,11:03 AM,,
+Downtown Center Leroy Outbound,Saturday-Sunday,Union,11:15 AM,Riverside & Columbus,11:21 AM,Leroy & Murray,11:26 AM,UDC,11:33 AM,,
+Downtown Center Leroy Outbound,Saturday-Sunday,Union,12:30 PM,Riverside & Columbus,12:36 PM,Leroy & Murray,12:41 PM,UDC,12:48 PM,,
+Downtown Center Leroy Outbound,Saturday-Sunday,Union,1:15 PM,Riverside & Columbus,1:21 PM,Leroy & Murray,1:26 PM,UDC,1:33 PM,,
+Downtown Center Leroy Outbound,Saturday-Sunday,Union,2:00 PM,Riverside & Columbus,2:06 PM,Leroy & Murray,2:11 PM,UDC,2:18 PM,,
+Downtown Center Leroy Outbound,Saturday-Sunday,Union,2:45 PM,Riverside & Columbus,2:51 PM,Leroy & Murray,2:56 PM,UDC,3:03 PM,,
+Downtown Center Leroy Outbound,Saturday-Sunday,Union,3:45 PM,Riverside & Columbus,3:51 PM,Leroy & Murray,3:56 PM,UDC,4:03 PM,,
+Downtown Center Leroy Outbound,Saturday-Sunday,Union,4:00 PM,Riverside & Columbus,4:06 PM,Leroy & Murray,4:11 PM,UDC,4:18 PM,,
+Downtown Center Leroy Outbound,Saturday-Sunday,Union,5:30 PM,Riverside & Columbus,5:36 PM,Leroy & Murray,5:41 PM,UDC,5:48 PM,,
+Downtown Center Leroy Outbound,Saturday-Sunday,Union,6:15 PM,Riverside & Columbus,6:21 PM,Leroy & Murray,6:26 PM,UDC,6:33 PM,,
+Downtown Center Leroy Outbound,Saturday-Sunday,Union,8:00 PM,Riverside & Columbus,8:06 PM,Leroy & Murray,8:11 PM,UDC,8:18 PM,,
+Downtown Center Leroy Outbound,Saturday-Sunday,Union,9:00 PM,Riverside & Columbus,9:06 PM,Leroy & Murray,9:11 PM,UDC,9:18 PM,,
+Downtown Center Leroy Outbound,Sunday,Union,9:30 PM,Riverside & Columbus,9:36 PM,Leroy & Murray,9:41 PM,UDC,9:48 PM,,
+Downtown Center Leroy Outbound,Saturday-Sunday,Union,10:30 PM,Riverside & Columbus,10:36 PM,Leroy & Murray,10:41 PM,UDC,10:48 PM,,
+Downtown Center Leroy Outbound,Saturday,Union,11:30 PM,Riverside & Columbus,11:36 PM,Leroy & Murray,11:41 PM,UDC,11:48 PM,,
+Downtown Center Leroy Outbound,Saturday-Sunday,Union,12:15 AM,Riverside & Columbus,12:21 AM,Leroy & Murray,12:26 AM,UDC,12:33 AM,,
+Westside Inbound,Saturday-Sunday,UDC,9:05 AM,Main & Murray,9:08 AM,Floral & Main,9:14 AM,Return to Campus,9:30 AM,,
+Westside Inbound,Saturday-Sunday,UDC,10:05 AM,Main & Murray,10:08 AM,Floral & Main,10:14 AM,Return to Campus,10:30 AM,,
+Westside Inbound,Saturday-Sunday,UDC,11:05 AM,Main & Murray,11:08 AM,Floral & Main,11:14 AM,Return to Campus,11:30 AM,,
+Westside Inbound,Saturday-Sunday,UDC,11:35 AM,Main & Murray,11:38 AM,Floral & Main,11:44 AM,Return to Campus,12:00 PM,,
+Westside Inbound,Saturday-Sunday,UDC,12:50 PM,Main & Murray,12:53 PM,Floral & Main,12:59 PM,Return to Campus,1:15 PM,,
+Westside Inbound,Saturday-Sunday,UDC,1:35 PM,Main & Murray,1:38 PM,Floral & Main,1:44 PM,Return to Campus,2:00 PM,,
+Westside Inbound,Saturday-Sunday,UDC,2:20 PM,Main & Murray,2:23 PM,Floral & Main,2:29 PM,Return to Campus,2:45 PM,,
+Westside Inbound,Saturday-Sunday,UDC,3:05 PM,Main & Murray,3:08 PM,Floral & Main,3:14 PM,Return to Campus,3:30 PM,,
+Westside Inbound,Saturday-Sunday,UDC,4:05 PM,Main & Murray,4:08 PM,Floral & Main,4:14 PM,Return to Campus,4:30 PM,,
+Westside Inbound,Saturday-Sunday,UDC,4:20 PM,Main & Murray,4:23 PM,Floral & Main,4:29 PM,Return to Campus,4:45 PM,,
+Westside Inbound,Saturday-Sunday,UDC,5:50 PM,Main & Murray,5:53 PM,Floral & Main,5:59 PM,Return to Campus,6:15 PM,,
+Westside Inbound,Saturday-Sunday,UDC,6:35 PM,Main & Murray,6:38 PM,Floral & Main,6:44 PM,Return to Campus,7:00 PM,,
+Westside Inbound,Saturday-Sunday,UDC,8:20 PM,Main & Murray,8:23 PM,Floral & Main,8:29 PM,Return to Campus,8:45 PM,,
+Westside Inbound,Saturday-Sunday,UDC,9:20 PM,Main & Murray,9:23 PM,Floral & Main,9:29 PM,Return to Campus,9:45 PM,,
+Westside Inbound,Sunday,UDC,9:50 PM,Main & Murray,9:53 PM,Floral & Main,9:59 PM,Return to Campus,10:15 PM,,
+Westside Inbound,Saturday-Sunday,UDC,10:50 PM,Main & Murray,10:53 PM,Floral & Main,10:59 PM,Return to Campus,11:15 PM,,
+Westside Inbound,Saturday,UDC,11:50 PM,Main & Murray,11:53 PM,Floral & Main,11:59 PM,Return to Campus,12:15 AM,,
+Downtown Southside Outbound,Sunday,Union,9:45 PM,Conklin & S. Washington,9:53 PM,Tompkins & Conklin,9:56 PM,BC Junction,10:00 PM,UDC,10:10 PM
+Downtown Southside Outbound,Sunday,Union,10:15 PM,Conklin & S. Washington,10:23 PM,Tompkins & Conklin,10:26 PM,BC Junction,10:30 PM,UDC,10:40 PM
+Downtown Southside Outbound,Sunday,Union,10:45 PM,Conklin & S. Washington,10:53 PM,Tompkins & Conklin,10:56 PM,BC Junction,11:00 PM,UDC,11:10 PM
+Main Street Outbound,Saturday-Sunday,Union,11:45 AM,Pharmacy School,11:54 AM,Main & Floral,11:57 AM,Main & Murray,12:03 PM,UDC,12:15 PM
+,,,,,,,,,,,
+Main Street Outbound,Saturday-Sunday,Union,2:15 PM,Pharmacy School,2:24 PM,Main & Floral,2:27 PM,Main & Murray,2:33 PM,UDC,2:45 PM
+Main Street Outbound,Saturday-Sunday,Union,4:45 PM,Pharmacy School,4:54 PM,Main & Floral,4:57 PM,Main & Murray,5:03 PM,UDC,5:15 PM
+Main Street Outbound,Saturday-Sunday,Union,7:15 PM,Pharmacy School,7:24 PM,Main & Floral,7:27 PM,Main & Murray,7:33 PM,UDC,7:45 PM
+Main Street Outbound,Saturday-Sunday,Union,8:45 PM,Pharmacy School,8:54 PM,Main & Floral,8:57 PM,Main & Murray,9:03 PM,UDC,9:15 PM
+University Downtown Center Inbound,Saturday-Sunday,UDC,12:15 PM,Return to Campus,12:30 PM,,,,,,
+University Downtown Center Inbound,Saturday-Sunday,UDC,2:45 PM,Return to Campus,3:00 PM,,,,,,
+University Downtown Center Inbound,Saturday-Sunday,UDC,5:15 PM,Return to Campus,5:30 PM,,,,,,
+University Downtown Center Inbound,Saturday-Sunday,UDC,7:45 PM,Return to Campus,8:00 PM,,,,,,
+University Downtown Center Inbound,Saturday-Sunday,UDC,9:15 PM,Return to Campus,9:30 PM,,,,,,
+University Downtown Center Inbound,Sunday,UDC,10:15 PM,Return to Campus,10:30 PM,,,,,,
+University Downtown Center Inbound,Sunday,UDC,10:45 PM,Return to Campus,11:00 PM,,,,,,
+University Downtown Center Inbound,Sunday,UDC,11:15 PM,Return to Campus,11:30 PM,,,,,,
+UClub Shuttle,Saturday-Sunday,Mohawk,9:30 AM,UClub,9:35 AM,Washington & Lehigh,9:39 AM,,,,
+UClub Shuttle,Saturday-Sunday,Mohawk,10:15 AM,UClub,10:20 AM,Washington & Lehigh,10:24 AM,,,,
+UClub Shuttle,Saturday-Sunday,Mohawk,11:00 AM,UClub,11:05 AM,Washington & Lehigh,11:09 AM,,,,
+UClub Shuttle,Saturday-Sunday,Mohawk,12:00 PM,UClub,12:05 PM,Washington & Lehigh,12:09 PM,,,,
+UClub Shuttle,Saturday-Sunday,Mohawk,12:15 PM,UClub,12:20 PM,Washington & Lehigh,12:24 PM,,,,
+UClub Shuttle,Saturday-Sunday,Mohawk,12:45 PM,UClub,12:50 PM,Washington & Lehigh,12:54 PM,,,,
+UClub Shuttle,Saturday-Sunday,Mohawk,1:00 PM,UClub,1:05 PM,Washington & Lehigh,1:09 PM,,,,
+UClub Shuttle,Saturday-Sunday,Mohawk,1:45 PM,UClub,1:50 PM,Washington & Lehigh,1:54 PM,,,,
+UClub Shuttle,Saturday-Sunday,Mohawk,2:00 PM,UClub,2:05 PM,Washington & Lehigh,2:09 PM,,,,
+UClub Shuttle,Saturday-Sunday,Mohawk,2:30 PM,UClub,2:35 PM,Washington & Lehigh,2:39 PM,,,,
+UClub Shuttle,Saturday-Sunday,Mohawk,3:30 PM,UClub,3:35 PM,Washington & Lehigh,3:39 PM,,,,
+UClub Shuttle,Saturday-Sunday,Mohawk,3:45 PM,UClub,3:50 PM,Washington & Lehigh,3:54 PM,,,,
+UClub Shuttle,Saturday-Sunday,Mohawk,4:15 PM,UClub,4:20 PM,Washington & Lehigh,4:24 PM,,,,
+UClub Shuttle,Saturday-Sunday,Mohawk,4:45 PM,UClub,4:50 PM,Washington & Lehigh,4:54 PM,,,,
+UClub Shuttle,Saturday-Sunday,Mohawk,5:30 PM,UClub,5:35 PM,Washington & Lehigh,5:39 PM,,,,
+UClub Shuttle,Saturday-Sunday,Mohawk,6:00 PM,UClub,6:05 PM,Washington & Lehigh,6:09 PM,,,,
+UClub Shuttle,Saturday-Sunday,Mohawk,6:30 PM,UClub,6:35 PM,Washington & Lehigh,6:39 PM,,,,
+UClub Shuttle,Saturday-Sunday,Mohawk,7:00 PM,UClub,7:05 PM,Washington & Lehigh,7:09 PM,,,,
+UClub Shuttle,Saturday-Sunday,Mohawk,7:15 PM,UClub,7:20 PM,Washington & Lehigh,7:24 PM,,,,
+UClub Shuttle,Saturday-Sunday,Mohawk,8:15 PM,UClub,8:20 PM,Washington & Lehigh,8:24 PM,,,,
+UClub Shuttle,Saturday-Sunday,Mohawk,8:45 PM,UClub,8:50 PM,Washington & Lehigh,8:54 PM,,,,
+UClub Shuttle,Saturday-Sunday,Mohawk,9:00 PM,UClub,9:05 PM,Washington & Lehigh,9:09 PM,,,,
+UClub Shuttle,Sunday,Mohawk,10:30 PM,UClub,10:35 PM,Washington & Lehigh,10:39 PM,,,,
+UClub Shuttle,Saturday,Mohawk,10:45 PM,UClub,10:50 PM,Washington & Lehigh,10:54 PM,,,,
+UClub Shuttle,Sunday,Mohawk,11:00 PM,UClub,11:05 PM,Washington & Lehigh,11:09 PM,,,,
+UClub Shuttle,Sunday,Mohawk,11:45 PM,UClub,11:50 PM,Washington & Lehigh,11:54 PM,,,,
+Campus Shuttle,Saturday-Sunday,Mohawk,10:00 AM,Susquehanna,10:04 AM,Hillside,10:06 AM,Mountainview,10:08 AM,Returns to Lower Campus,10:13 AM
+Campus Shuttle,Saturday-Sunday,Mohawk,10:45 AM,Susquehanna,10:49 AM,Hillside,10:51 AM,Mountainview,10:53 AM,Returns to Lower Campus,10:58 AM
+Campus Shuttle,Saturday-Sunday,Mohawk,11:45 AM,Susquehanna,11:49 AM,Hillside,11:51 AM,Mountainview,11:53 AM,Returns to Lower Campus,11:58 AM
+Campus Shuttle,Saturday-Sunday,Mohawk,12:00 PM,Susquehanna,12:04 PM,Hillside,12:06 PM,Mountainview,12:08 PM,Returns to Lower Campus,12:13 PM
+Campus Shuttle,Saturday-Sunday,Mohawk,12:30 PM,Susquehanna,12:34 PM,Hillside,12:36 PM,Mountainview,12:38 PM,Returns to Lower Campus,12:43 PM
+Campus Shuttle,Saturday-Sunday,Mohawk,1:30 PM,Susquehanna,1:34 PM,Hillside,1:36 PM,Mountainview,1:38 PM,Returns to Lower Campus,1:43 PM
+Campus Shuttle,Saturday-Sunday,Mohawk,1:45 PM,Susquehanna,1:49 PM,Hillside,1:51 PM,Mountainview,1:53 PM,Returns to Lower Campus,1:58 PM
+Campus Shuttle,Saturday-Sunday,Mohawk,2:15 PM,Susquehanna,2:19 PM,Hillside,2:21 PM,Mountainview,2:23 PM,Returns to Lower Campus,2:28 PM
+Campus Shuttle,Saturday-Sunday,Mohawk,3:15 PM,Susquehanna,3:19 PM,Hillside,3:21 PM,Mountainview,3:23 PM,Returns to Lower Campus,3:28 PM
+Campus Shuttle,Saturday-Sunday,Mohawk,3:30 PM,Susquehanna,3:34 PM,Hillside,3:36 PM,Mountainview,3:38 PM,Returns to Lower Campus,3:43 PM
+Campus Shuttle,Saturday-Sunday,Mohawk,4:00 PM,Susquehanna,4:04 PM,Hillside,4:06 PM,Mountainview,4:08 PM,Returns to Lower Campus,4:13 PM
+Campus Shuttle,Saturday-Sunday,Mohawk,4:30 PM,Susquehanna,4:34 PM,Hillside,4:36 PM,Mountainview,4:38 PM,Returns to Lower Campus,4:43 PM
+Campus Shuttle,Saturday-Sunday,Mohawk,5:15 PM,Susquehanna,5:19 PM,Hillside,5:21 PM,Mountainview,5:23 PM,Returns to Lower Campus,5:28 PM
+Campus Shuttle,Saturday-Sunday,Mohawk,5:45 PM,Susquehanna,5:49 PM,Hillside,5:51 PM,Mountainview,5:53 PM,Returns to Lower Campus,5:58 PM
+Campus Shuttle,Saturday-Sunday,Mohawk,6:15 PM,Susquehanna,6:19 PM,Hillside,6:21 PM,Mountainview,6:23 PM,Returns to Lower Campus,6:28 PM
+Campus Shuttle,Saturday-Sunday,Mohawk,6:45 PM,Susquehanna,6:49 PM,Hillside,6:51 PM,Mountainview,6:53 PM,Returns to Lower Campus,6:58 PM
+Campus Shuttle,Saturday-Sunday,Mohawk,7:00 PM,Susquehanna,7:04 PM,Hillside,7:06 PM,Mountainview,7:08 PM,Returns to Lower Campus,7:13 PM
+Campus Shuttle,Saturday-Sunday,Mohawk,8:00 PM,Susquehanna,8:04 PM,Hillside,8:06 PM,Mountainview,8:08 PM,Returns to Lower Campus,8:13 PM
+Campus Shuttle,Saturday-Sunday,Mohawk,8:30 PM,Susquehanna,8:34 PM,Hillside,8:36 PM,Mountainview,8:38 PM,Returns to Lower Campus,8:43 PM
+Campus Shuttle,Saturday-Sunday,Mohawk,8:45 PM,Susquehanna,8:49 PM,Hillside,8:51 PM,Mountainview,8:53 PM,Returns to Lower Campus,8:58 PM
+Campus Shuttle,Sunday,Mohawk,10:15 PM,Susquehanna,10:19 PM,Hillside,10:21 PM,Mountainview,10:23 PM,Returns to Lower Campus,10:28 PM
+Campus Shuttle,Saturday,Mohawk,10:30 PM,Susquehanna,10:34 PM,Hillside,10:36 PM,Mountainview,10:38 PM,Returns to Lower Campus,10:43 PM
+Campus Shuttle,Sunday,Mohawk,11:30 PM,Susquehanna,11:34 PM,Hillside,11:36 PM,Mountainview,11:38 PM,Returns to Lower Campus,11:43 PM
+Riviera Ridge - Town Square,Saturday-Sunday,Rafuse,10:30 AM,Parkway Plaza (Target),10:39 AM,Town Square Mall (Walmart),10:45 AM,Return to Campus,10:55 AM,,
+Riviera Ridge - Town Square,Saturday-Sunday,Rafuse,11:15 AM,Parkway Plaza (Target),11:24 AM,Town Square Mall (Walmart),11:30 AM,Return to Campus,11:40 AM,,
+Riviera Ridge - Town Square,Saturday-Sunday,Rafuse,11:30 AM,Parkway Plaza (Target),11:39 AM,Town Square Mall (Walmart),11:45 AM,Return to Campus,11:55 AM,,
+Riviera Ridge - Town Square,Saturday-Sunday,Rafuse,12:00 PM,Parkway Plaza (Target),12:09 PM,Town Square Mall (Walmart),12:15 PM,Return to Campus,12:25 PM,,
+Riviera Ridge - Town Square,Saturday-Sunday,Rafuse,12:30 PM,Parkway Plaza (Target),12:39 PM,Town Square Mall (Walmart),12:45 PM,Return to Campus,12:55 PM,,
+Riviera Ridge - Town Square,Saturday-Sunday,Rafuse,1:00 PM,Parkway Plaza (Target),1:09 PM,Town Square Mall (Walmart),1:15 PM,Return to Campus,1:25 PM,,
+Riviera Ridge - Town Square,Saturday-Sunday,Rafuse,1:45 PM,Parkway Plaza (Target),1:54 PM,Town Square Mall (Walmart),2:00 PM,Return to Campus,2:10 PM,,
+Riviera Ridge - Town Square,Saturday-Sunday,Rafuse,2:45 PM,Parkway Plaza (Target),2:54 PM,Town Square Mall (Walmart),3:00 PM,Return to Campus,3:10 PM,,
+Riviera Ridge - Town Square,Saturday-Sunday,Rafuse,3:30 PM,Parkway Plaza (Target),3:39 PM,Town Square Mall (Walmart),3:45 PM,Return to Campus,3:55 PM,,
+Riviera Ridge - Town Square,Saturday-Sunday,Rafuse,4:45 PM,Parkway Plaza (Target),4:54 PM,Town Square Mall (Walmart),5:00 PM,Return to Campus,5:10 PM,,
+Riviera Ridge - Town Square,Saturday-Sunday,Rafuse,6:15 PM,Parkway Plaza (Target),6:24 PM,Town Square Mall (Walmart),6:30 PM,Return to Campus,6:40 PM,,
+Riviera Ridge - Town Square,Saturday-Sunday,Rafuse,7:00 PM,Parkway Plaza (Target),7:09 PM,Town Square Mall (Walmart),7:15 PM,Return to Campus,7:25 PM,,
+Riviera Ridge - Town Square,Saturday-Sunday,Rafuse,8:00 PM,Parkway Plaza (Target),8:09 PM,Town Square Mall (Walmart),8:15 PM,Return to Campus,8:25 PM,,
+Riviera Ridge - Town Square,Saturday-Sunday,Rafuse,9:15 PM,Parkway Plaza (Target),9:24 PM,Town Square Mall (Walmart),9:30 PM,Return to Campus,9:40 PM,,
+Riviera Ridge - Town Square,Saturday-Sunday,Rafuse,9:45 PM,Parkway Plaza (Target),9:54 PM,Town Square Mall (Walmart),10:00 PM,Return to Campus,10:10 PM,,
+Oakdale Commons Shuttle,Saturday-Sunday,Rafuse,1:15 PM,Oakdale Commons,1:24 PM,Wegmans,1:30 PM,Return to Campus,1:43 PM,,
+Oakdale Commons Shuttle,Saturday-Sunday,Rafuse,3:00 PM,Oakdale Commons,3:09 PM,Wegmans,3:15 PM,Return to Campus,3:28 PM,,
+Oakdale Commons Shuttle,Saturday-Sunday,Rafuse,5:15 PM,Oakdale Commons,5:24 PM,Wegmans,5:30 PM,Return to Campus,5:43 PM,,
+Oakdale Commons Shuttle,Saturday-Sunday,Rafuse,7:30 PM,Oakdale Commons,7:39 PM,Wegmans,7:45 PM,Return to Campus,7:58 PM,,
+Oakdale Commons Shuttle,Saturday-Sunday,Rafuse,8:15 PM,Oakdale Commons,8:24 PM,Wegmans,8:30 PM,Return to Campus,8:43 PM,,
+Oakdale Commons Shuttle,Sunday,Rafuse,10:15 PM,Oakdale Commons,10:24 PM,Wegmans,10:30 PM,Return to Campus,10:43 PM,,
+Downtown Express,Friday,Union,10:00 PM,UClub,10:05 PM,Downtown,10:15 PM,UClub,,Return to Campus,10:30 PM
+Downtown Express,Friday,Union,10:30 PM,UClub,10:35 PM,Downtown,10:45 PM,UClub,,Return to Campus,11:00 PM
+Downtown Express,Friday,Union,10:45 PM,UClub,10:50 PM,Downtown,11:00 PM,UClub,,Return to Campus,11:15 PM
+Downtown Express,Friday,Union,11:00 PM,UClub,11:05 PM,Downtown,11:15 PM,UClub,,Return to Campus,11:30 PM
+Downtown Express,Friday,Union,11:15 PM,UClub,11:20 PM,Downtown,11:30 PM,UClub,,Return to Campus,11:45 PM
+Downtown Express,Friday,Union,11:30 PM,UClub,11:35 PM,Downtown,11:45 PM,UClub,,Return to Campus,12:00 AM
+Downtown Express,Friday,Union,11:45 PM,UClub,11:50 PM,Downtown,12:00 AM,UClub,,Return to Campus,12:15 AM
+Downtown Express,Friday,Union,12:00 AM,UClub,12:05 AM,Downtown,12:15 AM,UClub,,Return to Campus,12:30 AM
+Downtown Express,Friday,Union,12:30 AM,UClub,12:35 AM,Downtown,12:45 AM,UClub,,Return to Campus,1:00 AM
+Downtown Express,Friday,Union,12:45 AM,UClub,12:50 AM,Downtown,1:00 AM,UClub,,Return to Campus,1:15 AM
+Downtown Express,Friday,Union,1:00 AM,UClub,1:05 AM,Downtown,1:15 AM,UClub,,Return to Campus,1:30 AM
+Downtown Express,Friday,Union,1:15 AM,UClub,,Downtown,1:30 AM,UClub,1:35 AM,Return to Campus,1:45 AM
+Downtown Express,Friday,Union,1:30 AM,UClub,,Downtown,1:45 AM,UClub,1:50 AM,Return to Campus,2:00 AM
+Downtown Express,Friday,Union,1:45 AM,UClub,,Downtown,2:00 AM,UClub,2:05 AM,Return to Campus,2:15 AM
+Downtown Express,Friday,Union,2:00 AM,UClub,,Downtown,2:15 AM,UClub,2:20 AM,Return to Campus,2:30 AM
+Downtown Express,Friday,Union,2:15 AM,UClub,,Downtown,2:30 AM,UClub,2:35 AM,Return to Campus,2:45 AM
+Downtown Express,Friday,Union,2:30 AM,UClub,,Downtown,2:45 AM,UClub,2:50 AM,Return to Campus,3:00 AM
+Downtown Express,Friday,Union,2:45 AM,UClub,,Downtown,3:00 AM,UClub,3:05 AM,Return to Campus,3:15 AM
+Downtown Express,Friday,Union,3:00 AM,UClub,,Downtown,3:15 AM,UClub,3:20 AM,Return to Campus,3:30 AM
+Downtown Express,Friday,Union,3:15 AM,UClub,,Downtown,3:30 AM,UClub,3:35 AM,Return to Campus,3:45 AM
+Downtown Express,Saturday,Union,9:15 PM,UClub,9:20 PM,Downtown,9:30 PM,UClub,,Return to Campus,9:45 PM
+Downtown Express,Saturday,Union,9:30 PM,UClub,9:35 PM,Downtown,9:45 PM,UClub,,Return to Campus,10:00 PM
+Downtown Express,Saturday,Union,9:45 PM,UClub,9:50 PM,Downtown,10:00 PM,UClub,,Return to Campus,10:15 PM
+Downtown Express,Saturday,Union,10:00 PM,UClub,10:05 PM,Downtown,10:15 PM,UClub,,Return to Campus,10:30 PM
+Downtown Express,Saturday,Union,10:15 PM,UClub,10:20 PM,Downtown,10:30 PM,UClub,,Return to Campus,10:45 PM
+Downtown Express,Saturday,Union,10:45 PM,UClub,10:50 PM,Downtown,11:00 PM,UClub,,Return to Campus,11:15 PM
+Downtown Express,Saturday,Union,11:00 PM,UClub,11:05 PM,Downtown,11:15 PM,UClub,,Return to Campus,11:30 PM
+Downtown Express,Saturday,Union,11:15 PM,UClub,11:20 PM,Downtown,11:30 PM,UClub,,Return to Campus,11:45 PM
+Downtown Express,Saturday,Union,11:30 PM,UClub,11:35 PM,Downtown,11:45 PM,UClub,,Return to Campus,12:00 AM
+Downtown Express,Saturday,Union,11:45 PM,UClub,11:50 PM,Downtown,12:00 AM,UClub,,Return to Campus,12:15 AM
+Downtown Express,Saturday,Union,12:00 AM,UClub,12:05 AM,Downtown,12:15 AM,UClub,,Return to Campus,12:30 AM
+Downtown Express,Saturday,Union,12:15 AM,UClub,12:20 AM,Downtown,12:30 AM,UClub,,Return to Campus,12:45 AM
+Downtown Express,Saturday,Union,12:30 AM,UClub,12:35 AM,Downtown,12:45 AM,UClub,,Return to Campus,1:00 AM
+Downtown Express,Saturday,Union,12:45 AM,UClub,12:50 AM,Downtown,1:00 AM,UClub,,Return to Campus,1:15 AM
+Downtown Express,Saturday,Union,1:00 AM,UClub,,Downtown,1:15 AM,UClub,1:20 AM,Return to Campus,1:30 AM
+Downtown Express,Saturday,Union,1:15 AM,UClub,,Downtown,1:30 AM,UClub,1:35 AM,Return to Campus,1:45 AM
+Downtown Express,Saturday,Union,1:30 AM,UClub,,Downtown,1:45 AM,UClub,1:50 AM,Return to Campus,2:00 AM
+Downtown Express,Saturday,Union,1:45 AM,UClub,,Downtown,2:00 AM,UClub,2:05 AM,Return to Campus,2:15 AM
+Downtown Express,Saturday,Union,2:00 AM,UClub,,Downtown,2:15 AM,UClub,2:20 AM,Return to Campus,2:30 AM
+Downtown Express,Saturday,Union,2:15 AM,UClub,,Downtown,2:30 AM,UClub,2:35 AM,Return to Campus,2:45 AM
+Downtown Express,Saturday,Union,2:30 AM,UClub,,Downtown,2:45 AM,UClub,2:50 AM,Return to Campus,3:00 AM
+Downtown Express,Saturday,Union,2:45 AM,UClub,,Downtown,3:00 AM,UClub,3:05 AM,Return to Campus,3:15 AM
+Downtown Express,Saturday,Union,3:00 AM,UClub,,Downtown,3:15 AM,UClub,3:20 AM,Return to Campus,3:30 AM
+Downtown Express,Saturday,Union,3:15 AM,UClub,,Downtown,3:30 AM,UClub,3:35 AM,Return to Campus,3:45 AM
+Late Nite Westside Outbound,Saturday,Union,12:00 AM,Floral & Main,12:09 AM,Main & Murray,12:15 AM,State & Hawley,12:20 AM,,
+Late Nite Westside Outbound,Friday,Union,12:15 AM,Floral & Main,12:24 AM,Main & Murray,12:30 AM,State & Hawley,12:35 AM,,
+Late Nite Westside Outbound,Friday-Saturday,Union,1:00 AM,Floral & Main,1:09 AM,Main & Murray,1:15 AM,State & Hawley,1:20 AM,,
+Late Nite Westside Outbound,Friday-Saturday,Union,2:00 AM,Floral & Main,2:09 AM,Main & Murray,2:15 AM,State & Hawley,2:20 AM,,
+Late Nite Westside Outbound,Friday-Saturday,Union,3:00 AM,Floral & Main,3:09 AM,Main & Murray,3:15 AM,State & Hawley,3:20 AM,,
+Late Nite Downtown Center-Leroy Inbound,Saturday,Downtown,12:25 AM,Leroy & Murray,12:28 AM,Riverside & Columbus,12:34 AM,Return to Campus,12:44 AM,,
+Late Nite Downtown Center-Leroy Inbound,Friday,Downtown,12:40 AM,Leroy & Murray,12:43 AM,Riverside & Columbus,12:49 AM,Return to Campus,12:59 AM,,
+Late Nite Downtown Center-Leroy Inbound,Friday-Saturday,Downtown,1:25 AM,Leroy & Murray,1:28 AM,Riverside & Columbus,1:34 AM,Return to Campus,1:44 AM,,
+Late Nite Downtown Center-Leroy Inbound,Friday-Saturday,Downtown,2:25 AM,Leroy & Murray,2:28 AM,Riverside & Columbus,2:34 AM,Return to Campus,2:44 AM,,
+Late Nite Downtown Center-Leroy Inbound,Friday-Saturday,Downtown,3:25 AM,Leroy & Murray,3:28 AM,Riverside & Columbus,3:34 AM,Return to Campus,3:44 AM,,
+Late Nite Downtown Center Leroy Outbound,Friday-Saturday,Union,12:15 AM,Riverside & Columbus,12:21 AM,Leroy & Murray,12:26 AM,State & Hawley,12:30 AM,,
+Late Nite Downtown Center Leroy Outbound,Friday-Saturday,Union,1:00 AM,Riverside & Columbus,1:06 AM,Leroy & Murray,1:11 AM,State & Hawley,1:15 AM,,
+Late Nite Downtown Center Leroy Outbound,Friday-Saturday,Union,1:45 AM,Riverside & Columbus,1:51 AM,Leroy & Murray,1:56 AM,State & Hawley,2:00 AM,,
+Late Nite Downtown Center Leroy Outbound,Friday-Saturday,Union,2:30 AM,Riverside & Columbus,2:36 AM,Leroy & Murray,2:41 AM,State & Hawley,2:45 AM,,
+Late Nite Westside Inbound Inbound,Friday-Saturday,Downtown,12:35 AM,Main & Murray,12:38 AM,Floral & Main,12:44 AM,Return to Campus,12:55 AM,,
+Late Nite Westside Inbound Inbound,Friday-Saturday,Downtown,1:20 AM,Main & Murray,1:23 AM,Floral & Main,1:29 AM,Return to Campus,1:40 AM,,
+Late Nite Westside Inbound Inbound,Friday-Saturday,Downtown,2:05 AM,Main & Murray,2:08 AM,Floral & Main,2:14 AM,Return to Campus,2:25 AM,,
+Late Nite Westside Inbound Inbound,Friday-Saturday,Downtown,2:50 AM,Main & Murray,2:53 AM,Floral & Main,2:59 AM,Return to Campus,3:10 AM,,
+Late Nite Campus Shuttle,Friday-Saturday,Mohawk,12:45 AM,Susquehanna,12:49 AM,Hillside,12:51 AM,Mountainview,12:53 AM,Returns to Lower Campus,12:58 AM
+Late Nite Campus Shuttle,Friday-Saturday,Mohawk,1:45 AM,Susquehanna,1:49 AM,Hillside,1:51 AM,Mountainview,1:53 AM,Returns to Lower Campus,1:58 AM
+Late Nite Campus Shuttle,Friday-Saturday,Mohawk,2:45 AM,Susquehanna,2:49 AM,Hillside,2:51 AM,Mountainview,2:53 AM,Returns to Lower Campus,2:58 AM
+Late Nite Campus Shuttle,Friday-Saturday,Mohawk,3:15 AM,Susquehanna,3:19 AM,Hillside,3:21 AM,Mountainview,3:23 AM,Returns to Lower Campus,3:28 AM

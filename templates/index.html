@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bus Finder</title>
+
+  <style>
+
+    /* --- HEADER BANNER --- */
+    .header-banner {
+      width: 100%;
+      background: var(--button-bg); /* or any color you prefer */
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      box-sizing: border-box;
+    }
+
+    .header-left, .header-right {
+      display: flex;
+      align-items: center;
+    }
+
+    .site-title {
+      font-weight: bold;
+      font-size: 18px;
+      text-decoration: none;
+      color: white;
+    }
+
+    .site-title:hover {
+      text-decoration: underline;
+    }
+
+    /* --- SETTINGS BUTTON --- */
+    #settings-btn {
+      background: var(--swap-btn-bg);
+      color: black;
+      font-weight: bold;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease-in-out;
+    }
+
+    #settings-btn:hover {
+      background: var(--swap-btn-hover);
+    }
+
+    /* --- SETTINGS PANEL (Hidden by default) --- */
+    .settings-panel {
+      position: absolute;
+      top: 60px;      /* Position below header */
+      right: 20px;    /* Align to the right edge of the header */
+      background: var(--form-bg);
+      border: 1px solid var(--input-border);
+      padding: 20px;
+      border-radius: 5px;
+      z-index: 9999;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      opacity: 0;
+      transform: translateY(-20px);
+      pointer-events: none;
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .settings-panel.active {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+}
+    /* Reuse your existing .theme-toggle styles or add them here */
+    .theme-toggle {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .theme-toggle label {
+      margin-right: 8px;
+    }
+
+
+    select {
+      /* Remove default arrow and styling */
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      
+      background: var(--input-bg);
+      border: 1px solid var(--input-border);
+      border-radius: 5px;
+      padding: 12px;
+      font-size: 16px;
+      color: var(--text-color);
+      width: 100%;
+      box-sizing: border-box;
+      
+      /* Add a custom arrow using an inline SVG */
+      background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="%23333" viewBox="0 0 16 16"><path d="M4.646 6.646a.5.5 0 01.708 0L8 9.293l2.646-2.647a.5.5 0 11.708.708l-3 3a.5.5 0 01-.708 0l-3-3a.5.5 0 010-.708z"/></svg>');
+      background-repeat: no-repeat;
+      background-position: right 10px center;
+      background-size: 12px;
+    }
+
+    /* Optional: Better focus state for accessibility */
+    select:focus {
+      outline: none;
+      border-color: var(--button-bg);
+      box-shadow: 0 0 5px rgba(0,123,255,0.5);
+    }
+
+    .date-row {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 15px;
+      align-items: center; /* Ensures the button and input line up nicely */
+    }
+
+    .date-row input,
+    .date-row .current-date-btn {
+      flex: 1; 
+      height: 48px;
+      font-size: 16px;
+      font-family: inherit;
+      padding: 0 14px;
+      border-radius: 6px;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+    }
+
+    .date-row .current-date-btn {
+      background: var(--swap-btn-bg);
+      color: black;
+      font-weight: bold;
+      width: auto;
+      cursor: pointer;
+    }
+
+    .date-row .current-date-btn:hover {
+      background: var(--swap-btn-hover);
+    }
+
+    :root {
+      --bg-color: #f4f4f4;
+      --text-color: #333;
+      --form-bg: white;
+      --input-bg: white;
+      --input-border: #ccc;
+      --button-bg: #007bff;
+      --button-hover: #0056b3;
+      --swap-btn-bg: #ffc107;
+      --swap-btn-hover: #e0a800;
+      --option-bg: white;
+      --option-hover-bg: #007bff;
+      --option-hover-text: white;
+      --separator-bg: #ddd;
+      --separator-text: #666;
+      --bus-item-bg: white;
+      --bus-item-border: #ccc;
+    }
+
+    [data-theme="dark"] {
+      --bg-color: #181818;
+      --text-color: #f4f4f4;
+      --form-bg: #252525;
+      --input-bg: #333;
+      --input-border: #555;
+      --button-bg: #1e90ff;
+      --button-hover: #1565c0;
+      --swap-btn-bg: #ffcc00;
+      --swap-btn-hover: #d4a700;
+      --option-bg: #333;
+      --option-hover-bg: #1e90ff;
+      --option-hover-text: white;
+      --separator-bg: #444;
+      --separator-text: #bbb;
+      --bus-item-bg: #333;
+      --bus-item-border: #555;
+    }
+
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      transition: all 0.3s ease-in-out;
+      overflow-x: hidden;
+    }
+
+    .main-content {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background-color: var(--bg-color);
+    }
+
+    .container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 40px;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      width: 100%;
+    }
+
+    .form-container,
+    .output-container {
+      flex: 1;
+      background: var(--form-bg);
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    h1, h2 {
+      text-align: center;
+      font-size: 24px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    select, input {
+      width: 100%;
+      padding: 12px;
+      margin: 5px 0 15px;
+      border: 1px solid var(--input-border);
+      border-radius: 5px;
+      font-size: 16px;
+      background: var(--input-bg);
+      color: var(--text-color);
+      box-sizing: border-box;
+    }
+
+    select option {
+      padding: 8px;
+      background: var(--option-bg);
+      color: var(--text-color);
+    }
+
+    select option:hover {
+      background-color: var(--option-hover-bg);
+      color: var(--option-hover-text);
+    }
+
+    select option.separator {
+      background-color: var(--separator-bg);
+      color: var(--separator-text);
+      font-weight: bold;
+      text-align: center;
+      font-style: italic;
+      pointer-events: none;
+    }
+
+    button {
+      background: var(--button-bg);
+      color: white;
+      border: none;
+      padding: 12px 15px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      width: 100%;
+      transition: all 0.3s ease-in-out;
+    }
+
+    button:hover {
+      background: var(--button-hover);
+    }
+
+    .swap-btn {
+      background: var(--swap-btn-bg);
+      color: black;
+      font-weight: bold;
+      width: auto;
+      display: block;
+      margin: 10px auto;
+      padding: 8px 12px;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    .swap-btn:hover {
+      background: var(--swap-btn-hover);
+    }
+
+    /* CLEANED UP TIME ROW */
+    .time-row {
+      display: flex;
+      align-items: center; /* <-- Add this line */
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    .time-row input,
+    .time-row .current-time-btn {
+      flex: 1; /* 👈 ensure equal width */
+      height: 48px;
+      font-size: 16px;
+      font-family: inherit;
+      padding: 0 14px;
+      border-radius: 6px;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+    }
+
+    .time-row input {
+      border: 1px solid var(--input-border);
+      background: var(--input-bg);
+      color: var(--text-color);
+      appearance: none;
+      -webkit-appearance: none;
+    }
+    .time-row .current-time-btn {
+      background: var(--swap-btn-bg);
+      color: black;
+      font-weight: bold;
+      width: auto;
+      cursor: pointer;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 5px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .time-row .current-time-btn:hover {
+      background: var(--swap-btn-hover);
+    }
+    #bus-list {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .bus-item {
+      background: var(--bus-item-bg);
+      margin-bottom: 15px;
+      padding: 15px;
+      border: 1px solid var(--bus-item-border);
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .bus-item:hover {
+      background: var(--option-hover-bg);
+      color: var(--option-hover-text);
+    }
+
+    .bus-details {
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      padding: 0;
+      border-radius: 5px;
+      background: var(--form-bg);
+      color: var(--text-color);
+      transition: all 0.3s ease-out;
+      margin-top: 0;
+    }
+
+    h4 {
+      margin: 5px 0 8px;
+    }
+
+    .theme-toggle {
+      display: flex;
+      align-items: center;
+      white-space: nowrap;
+    }
+
+    .theme-toggle label {
+      margin-right: 8px;
+    }
+
+    .footer-align {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .footer-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .footer-text a {
+      color: var(--button-bg);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .footer-text a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        /* Stack vertically instead of side-by-side */
+        flex-direction: column;
+        /* Reduce the gap to avoid pushing content off-screen */
+        gap: 20px;
+        /* Add some horizontal padding so it doesn’t butt against the edge */
+        padding: 15px;
+        /* Center the container and ensure it doesn’t exceed the screen width */
+        margin: 20px auto;
+        width: calc(100% - 40px); /* A little breathing room on both sides */
+        max-width: 600px;         /* or another narrower max-width */
+      }
+      
+      /* Ensure form and output containers shrink as well */
+      .form-container,
+      .output-container {
+        padding: 15px;
+        margin: 0; /* remove any extra margin if necessary */
+      }
+}
+      h1, h2 {
+        font-size: 20px;
+      }
+
+      select, input, button {
+        font-size: 14px;
+        padding: 10px;
+      }
+
+      .bus-item {
+        padding: 12px;
+      }
+
+      .footer-align {
+        padding: 20px 15px;
+      }
+
+      .footer-text {
+        text-align: center;
+      }
+    
+  </style>
+</head>
+<body>
+
+
+  <header class="header-banner">
+    <div class="header-left">
+      <!-- Click to reset/reload the site -->
+      <a href="#" class="site-title" onclick="resetSite()">
+        Binghamton University OCCT Bus Finder
+      </a>
+    </div>
+    <div class="header-right">
+      <!-- Opens the settings panel -->
+      <button id="settings-btn">Settings</button>
+    </div>
+  </header>
+  
+  <!-- The hidden Settings panel -->
+  <div id="settings-panel" class="settings-panel">
+    <h2>Settings</h2>
+  
+    <!-- Dark Mode Toggle -->
+    <div class="theme-toggle">
+      <label for="theme-switch">Dark Mode:</label>
+      <input type="checkbox" id="theme-switch" />
+    </div>
+  
+    <!-- Info and disclaimers -->
+    <p>Made by Joshua Dweck</p>
+    <p>Not affiliated with OCCT</p>
+    <p>Version 0.2</p>
+    <p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSe-XNtcC_qEfU2CD7QOZ-cH-BuVaXoiTyu1-MfiiC0K0U1Wiw/viewform?usp=dialog" target="_blank">
+        Report a Bug
+      </a>
+    </p>
+  </div>
+
+  <div class="main-content">
+    <div class="container">
+      <div class="form-container">
+        <h1>Find a Bus</h1>
+        <form method="post">
+          <label for="date">Select Date:</label>
+          <div class="date-row">
+            <input type="date" id="date" name="date" required value="{{ date }}" />
+            <button type="button" class="current-date-btn" onclick="fillCurrentDate()">Current Date</button>
+          </div>
+        
+        
+          <label for="start_location">Starting Location:</label>
+          <select id="start_location" name="start_location">
+            <option value="Campus" {% if start_location == "Campus" %}selected{% endif %}>Campus</option>
+            <option value="Downtown" {% if start_location == "Downtown" %}selected{% endif %}>Downtown (State & Hawley, UDC)</option>
+            <option class="separator" disabled>── All Stops ──</option>
+            {% for stop in stops %}
+              <option value="{{ stop }}" {% if stop == start_location %}selected{% endif %}>{{ stop }}</option>
+            {% endfor %}
+          </select>
+
+
+          
+          <button type="button" class="swap-btn" onclick="swapLocations()">🔄 Swap Locations</button>
+
+          <label for="end_location">Destination:</label>
+          <select id="end_location" name="end_location">
+            <option value="Campus" {% if end_location == "Campus" %}selected{% endif %}>Campus</option>
+            <option value="Downtown" {% if end_location == "Downtown" %}selected{% endif %}>Downtown (State & Hawley, UDC)</option>
+            <option class="separator" disabled>── All Stops ──</option>
+            {% for stop in stops %}
+              <option value="{{ stop }}" {% if stop == end_location %}selected{% endif %}>{{ stop }}</option>
+            {% endfor %}
+          </select>
+
+          
+          <label for="time">Preferred Departure Time:</label>
+          <div class="time-row">
+            <input type="time" id="time" name="time" placeholder="HH:MM AM/PM" value="{{ time }}" />
+            <button type="button" class="current-time-btn" onclick="fillCurrentTime()">Current Time</button>
+          </div>
+
+          <button type="submit">Find Buses</button>
+        </form>
+
+        
+
+
+      </div>
+
+      <div class="output-container">
+        <h2>Available Buses</h2>
+        {% if buses %}
+          <ul id="bus-list">
+            {% for bus in buses %}
+              <li class="bus-item" onclick="toggleDetails(this)" data-schedule='{{ bus.full_schedule | tojson | safe }}'>
+                <strong>{{ bus.route }}</strong><br />
+
+
+                <div style="padding-left: 20px;">
+                  <span style="display: inline-block; width: 80px;">Departure:</span> {{ bus.start_time }} at {{ bus.start_stop }}
+                </div>
+
+
+                <div style="padding-left: 20px;">
+                  <span style="display: inline-block; width: 80px;">Arrival:</span> {{ bus.end_time }} at {{ bus.end_stop }}
+                </div>
+                <div class="bus-details"></div>
+              </li>
+            {% endfor %}
+          </ul>
+          {% if buses|length > 4 %}
+            <button id="show-more-btn" onclick="toggleBusList()">Show More</button>
+          {% endif %}
+        {% else %}
+          <p>No buses found.</p>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function fillCurrentDate() {
+      const now = new Date();
+      const year = now.getFullYear();
+      let month = now.getMonth() + 1;
+      let day = now.getDate();
+  
+      // Pad month/day with a leading zero if needed
+      if (month < 10) month = '0' + month;
+      if (day < 10) day = '0' + day;
+  
+      document.getElementById("date").value = `${year}-${month}-${day}`;
+    }
+  </script>
+
+  <script>
+    function fillCurrentTime() {
+      const now = new Date();
+      let hours = now.getHours();
+      let minutes = now.getMinutes();
+
+      // Pad hours/minutes with a leading zero if needed
+      if (hours < 10) hours = '0' + hours;
+      if (minutes < 10) minutes = '0' + minutes;
+
+      // Construct a valid 24-hour time string
+      const timeString = `${hours}:${minutes}`;
+      document.getElementById("time").value = timeString;
+    }
+    function toggleDetails(busItem) {
+      const detailsContainer = busItem.querySelector(".bus-details");
+      if (detailsContainer.style.maxHeight === "0px" || !detailsContainer.style.maxHeight) {
+        const scheduleData = busItem.getAttribute("data-schedule");
+        if (!scheduleData) return;
+        const schedule = JSON.parse(scheduleData);
+        let html = `<h4>Full Schedule:</h4><ul>`;
+        schedule.forEach(stop => {
+          html += `<li><strong>${stop.time}</strong> - ${stop.stop}</li>`;
+        });
+        html += "</ul>";
+        detailsContainer.innerHTML = html;
+        detailsContainer.style.display = "block";
+        setTimeout(() => {
+          detailsContainer.style.maxHeight = detailsContainer.scrollHeight + "px";
+          detailsContainer.style.opacity = "1";
+          detailsContainer.style.padding = "10px";
+        }, 10);
+      } else {
+        detailsContainer.style.maxHeight = "0";
+        detailsContainer.style.opacity = "0";
+        detailsContainer.style.padding = "0";
+        setTimeout(() => {
+          detailsContainer.style.display = "none";
+          detailsContainer.innerHTML = "";
+        }, 300);
+      }
+    }
+
+    function swapLocations() {
+      const start = document.getElementById("start_location");
+      const end = document.getElementById("end_location");
+      [start.value, end.value] = [end.value, start.value];
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+
+    
+
+      const themeToggle = document.getElementById("theme-switch");
+      const body = document.body;
+      if (localStorage.getItem("theme") === "dark") {
+        body.setAttribute("data-theme", "dark");
+        themeToggle.checked = true;
+      }
+      themeToggle.addEventListener("change", function () {
+        if (themeToggle.checked) {
+          body.setAttribute("data-theme", "dark");
+          localStorage.setItem("theme", "dark");
+        } else {
+          body.removeAttribute("data-theme");
+          localStorage.setItem("theme", "light");
+        }
+      });
+
+      const busList = document.getElementById("bus-list");
+      const showMoreBtn = document.getElementById("show-more-btn");
+      if (busList && showMoreBtn) {
+        const busItems = busList.getElementsByClassName("bus-item");
+        const maxVisible = 4;
+        for (let i = maxVisible; i < busItems.length; i++) {
+          busItems[i].style.display = "none";
+        }
+        window.toggleBusList = function () {
+          const isExpanded = showMoreBtn.getAttribute("data-expanded") === "true";
+          for (let i = maxVisible; i < busItems.length; i++) {
+            busItems[i].style.display = isExpanded ? "none" : "block";
+          }
+          showMoreBtn.textContent = isExpanded ? "Show More" : "Show Less";
+          showMoreBtn.setAttribute("data-expanded", String(!isExpanded));
+        };
+      }
+    });
+  </script>
+
+  <script>
+    // Reset site function
+    function resetSite() {
+      window.location.href = '/'; // Adjust as needed
+    }
+
+    // Settings panel toggle
+    document.getElementById("settings-btn").addEventListener("click", function(e) {
+      e.stopPropagation();
+      const panel = document.getElementById("settings-panel");
+      panel.classList.toggle("active");
+    });
+
+      document.getElementById("settings-panel").addEventListener("click", function(e) {
+      e.stopPropagation();
+    });
+
+
+
+    // Close the settings panel when clicking outside of it
+    document.addEventListener("click", function() {
+      const panel = document.getElementById("settings-panel");
+      panel.classList.remove("active");
+    });
+  </script>
+  
+  <!-- Your other scripts (fillCurrentDate, fillCurrentTime, etc.) -->
+  </script>
+
+</body>
+</html>
