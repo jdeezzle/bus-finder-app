@@ -13,7 +13,7 @@ app = Flask(__name__)
 # Load the bus routes CSV
 import os
 
-CSV_PATH = os.path.join(os.getcwd(), "newBusRoutes_Cleaned.csv")
+CSV_PATH = os.path.join(os.getcwd(), "FALL25bus_schedule_output.csv")
 bus_data = pd.read_csv(CSV_PATH)
 
 # Extract bus stop names from column headers
