@@ -169,7 +169,7 @@ def index():
                         else:
                             user_datetime = datetime.combine(user_date, user_time)
                             bus_start_dt = compute_next_bus_datetime(start_time, user_datetime)
-                            if bus_start_dt and bus_start_dt >= user_datetime and bus_start_dt < (user_datetime + timedelta(days=1)):
+                            if bus_start_dt and bus_start_dt >= user_datetime and bus_start_dt < (user_datetime + timedelta(hours=12)):
                                 start_stop_display = fix_stop_display(stop_name)
                                 end_stop_display = fix_stop_display(end_stop_name)
                                 buses.append({
@@ -188,6 +188,22 @@ def index():
                         break  # Stop searching for an end stop after the first match
 
     buses = sorted(buses, key=lambda x: x["sort_time"])
+
+    # Insert a separator when the bus date changes
+    new_buses = []
+    last_date = None
+    for bus in buses:
+        bus_date = bus["sort_time"].date()
+        # If last_date is set and the current bus's date is8763648 different, insert a separator.
+        if last_date is not None and bus_date != last_date:
+            new_buses.append({
+                "separator": True,
+                "date": bus_date.strftime("%B %d, %Y")  # e.g., "March 26, 2025"
+            })
+        new_buses.append(bus)
+        last_date = bus_date
+    buses = new_buses
+
     sorted_stops = ["Campus"] + sorted(all_stops - CAMPUS_STOPS)
     return render_template("index.html", stops=sorted_stops, buses=buses, 
                            start_location=start_location, end_location=end_location, 

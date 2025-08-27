@@ -6,6 +6,49 @@
   <title>Bus Finder</title>
 
   <style>
+    .main-content, .container {
+        overflow-x: hidden;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .separator {
+      text-align: center;
+      font-style: italic;
+      padding: 8px;
+      margin: 12px 0;
+      background: var(--separator-bg);
+      color: var(--separator-text);
+      border-radius: 4px;
+    }
+
+    html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+    }
+
+    .header-banner {
+        position: relative;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .settings-panel {
+        position: absolute;
+        overflow: hidden;
+        max-width: calc(100% - 40px); /* ensures panel is responsive */
+    }
+
+    .page-wrapper {
+      overflow-x: hidden;
+      position: relative;
+      width: 100%;
+    }
+    
 
     /* --- HEADER BANNER --- */
     .header-banner {
@@ -460,256 +503,292 @@
   </style>
 </head>
 <body>
+  <div class="page-wrapper">
 
 
-  <header class="header-banner">
-    <div class="header-left">
-      <!-- Click to reset/reload the site -->
-      <a href="#" class="site-title" onclick="resetSite()">
-        Binghamton University OCCT Bus Finder
-      </a>
-    </div>
-    <div class="header-right">
-      <!-- Opens the settings panel -->
-      <button id="settings-btn">Settings</button>
-    </div>
-  </header>
-  
-  <!-- The hidden Settings panel -->
-  <div id="settings-panel" class="settings-panel">
-    <h2>Settings</h2>
-  
-    <!-- Dark Mode Toggle -->
-    <div class="theme-toggle">
-      <label for="theme-switch">Dark Mode:</label>
-      <input type="checkbox" id="theme-switch" />
-    </div>
-  
-    <!-- Info and disclaimers -->
-    <p>Made by Joshua Dweck</p>
-    <p>Not affiliated with OCCT</p>
-    <p>Version 0.2</p>
-    <p>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSe-XNtcC_qEfU2CD7QOZ-cH-BuVaXoiTyu1-MfiiC0K0U1Wiw/viewform?usp=dialog" target="_blank">
-        Report a Bug
-      </a>
-    </p>
-  </div>
-
-  <div class="main-content">
-    <div class="container">
-      <div class="form-container">
-        <h1>Find a Bus</h1>
-        <form method="post">
-          <label for="date">Select Date:</label>
-          <div class="date-row">
-            <input type="date" id="date" name="date" required value="{{ date }}" />
-            <button type="button" class="current-date-btn" onclick="fillCurrentDate()">Current Date</button>
-          </div>
-        
-        
-          <label for="start_location">Starting Location:</label>
-          <select id="start_location" name="start_location">
-            <option value="Campus" {% if start_location == "Campus" %}selected{% endif %}>Campus</option>
-            <option value="Downtown" {% if start_location == "Downtown" %}selected{% endif %}>Downtown (State & Hawley, UDC)</option>
-            <option class="separator" disabled>── All Stops ──</option>
-            {% for stop in stops %}
-              <option value="{{ stop }}" {% if stop == start_location %}selected{% endif %}>{{ stop }}</option>
-            {% endfor %}
-          </select>
-
-
-          
-          <button type="button" class="swap-btn" onclick="swapLocations()">🔄 Swap Locations</button>
-
-          <label for="end_location">Destination:</label>
-          <select id="end_location" name="end_location">
-            <option value="Campus" {% if end_location == "Campus" %}selected{% endif %}>Campus</option>
-            <option value="Downtown" {% if end_location == "Downtown" %}selected{% endif %}>Downtown (State & Hawley, UDC)</option>
-            <option class="separator" disabled>── All Stops ──</option>
-            {% for stop in stops %}
-              <option value="{{ stop }}" {% if stop == end_location %}selected{% endif %}>{{ stop }}</option>
-            {% endfor %}
-          </select>
-
-          
-          <label for="time">Preferred Departure Time:</label>
-          <div class="time-row">
-            <input type="time" id="time" name="time" placeholder="HH:MM AM/PM" value="{{ time }}" />
-            <button type="button" class="current-time-btn" onclick="fillCurrentTime()">Current Time</button>
-          </div>
-
-          <button type="submit">Find Buses</button>
-        </form>
-
-        
-
-
+    <header class="header-banner">
+      <div class="header-left">
+        <!-- Click to reset/reload the site -->
+        <a href="#" class="site-title" onclick="resetSite()">
+          Binghamton University OCCT Bus Finder
+        </a>
       </div>
+      <div class="header-right">
+        <!-- Opens the settings panel -->
+        <button id="settings-btn">Settings</button>
+      </div>
+    </header>
+    
+    <!-- The hidden Settings panel -->
+    <div id="settings-panel" class="settings-panel">
+      <h2>Settings</h2>
+    
+      <!-- Dark Mode Toggle -->
+      <div class="theme-toggle">
+        <label for="theme-switch">Dark Mode:</label>
+        <input type="checkbox" id="theme-switch" />
+      </div>
+    
+      <!-- Info and disclaimers -->
+      <p>Made by Joshua Dweck</p>
+      <p>Not affiliated with OCCT</p>
+      <p>Version 0.2</p>
+      <p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe-XNtcC_qEfU2CD7QOZ-cH-BuVaXoiTyu1-MfiiC0K0U1Wiw/viewform?usp=dialog" target="_blank">
+          Report a Bug
+        </a>
+      </p>
+    </div>
 
-      <div class="output-container">
-        <h2>Available Buses</h2>
-        {% if buses %}
+    <div class="main-content">
+      <div class="container">
+        <div class="form-container">
+          <h1>Find a Bus</h1>
+          <form method="post">
+            <label for="date">Select Date:</label>
+            <div class="date-row">
+              <input type="date" id="date" name="date" required value="{{ date }}" />
+              <button type="button" class="current-date-btn" onclick="fillCurrentDate()">Current Date</button>
+            </div>
+          
+          
+            <label for="start_location">Starting Location:</label>
+            <select id="start_location" name="start_location">
+              <option value="Campus" {% if start_location == "Campus" %}selected{% endif %}>Campus</option>
+              <option value="Downtown" {% if start_location == "Downtown" %}selected{% endif %}>Downtown (State & Hawley, UDC)</option>
+              <option class="separator" disabled>── All Stops ──</option>
+              {% for stop in stops %}
+                <option value="{{ stop }}" {% if stop == start_location %}selected{% endif %}>{{ stop }}</option>
+              {% endfor %}
+            </select>
+
+
+            
+            <button type="button" class="swap-btn" onclick="swapLocations()">🔄 Swap Locations</button>
+
+            <label for="end_location">Destination:</label>
+            <select id="end_location" name="end_location">
+              <option value="Campus" {% if end_location == "Campus" %}selected{% endif %}>Campus</option>
+              <option value="Downtown" {% if end_location == "Downtown" %}selected{% endif %}>Downtown (State & Hawley, UDC)</option>
+              <option class="separator" disabled>── All Stops ──</option>
+              {% for stop in stops %}
+                <option value="{{ stop }}" {% if stop == end_location %}selected{% endif %}>{{ stop }}</option>
+              {% endfor %}
+            </select>
+
+            
+            <label for="time">Preferred Departure Time:</label>
+            <div class="time-row">
+              <input type="time" id="time" name="time" placeholder="HH:MM AM/PM" value="{{ time }}" />
+              <button type="button" class="current-time-btn" onclick="fillCurrentTime()">Current Time</button>
+            </div>
+
+            <button type="submit">Find Buses</button>
+          </form>
+
+        </div>
+
+        <div class="output-container">
+          <h2>Available Buses</h2>
+          {% if buses %}
           <ul id="bus-list">
             {% for bus in buses %}
-              <li class="bus-item" onclick="toggleDetails(this)" data-schedule='{{ bus.full_schedule | tojson | safe }}'>
-                <strong>{{ bus.route }}</strong><br />
-
-
-                <div style="padding-left: 20px;">
-                  <span style="display: inline-block; width: 80px;">Departure:</span> {{ bus.start_time }} at {{ bus.start_stop }}
-                </div>
-
-
-                <div style="padding-left: 20px;">
-                  <span style="display: inline-block; width: 80px;">Arrival:</span> {{ bus.end_time }} at {{ bus.end_stop }}
-                </div>
-                <div class="bus-details"></div>
-              </li>
+              {% if bus.separator %}
+                <li class="separator">
+                  ——— [{{ bus.date }}] ————
+                </li>
+              {% else %}
+                <li class="bus-item" onclick="toggleDetails(this)" data-schedule='{{ bus.full_schedule | tojson | safe }}'>
+                  <strong>{{ bus.route }}</strong><br />
+                  <div style="padding-left: 20px;">
+                    <span style="display: inline-block; width: 80px;">Departure:</span> {{ bus.start_time }} at {{ bus.start_stop }}
+                  </div>
+                  <div style="padding-left: 20px;">
+                    <span style="display: inline-block; width: 80px;">Arrival:</span> {{ bus.end_time }} at {{ bus.end_stop }}
+                  </div>
+                  <div class="bus-details"></div>
+                </li>
+              {% endif %}
             {% endfor %}
           </ul>
-          {% if buses|length > 4 %}
-            <button id="show-more-btn" onclick="toggleBusList()">Show More</button>
+          
+            {% if buses|length > 4 %}
+              <button id="show-more-btn" onclick="toggleBusList()">Show More</button>
+            {% endif %}
+          {% else %}
+            <p>No buses found.</p>
           {% endif %}
-        {% else %}
-          <p>No buses found.</p>
-        {% endif %}
+        </div>
       </div>
     </div>
+
+    <script>
+      function fillCurrentDate() {
+        const now = new Date();
+        const year = now.getFullYear();
+        let month = now.getMonth() + 1;
+        let day = now.getDate();
+    
+        // Pad month/day with a leading zero if needed
+        if (month < 10) month = '0' + month;
+        if (day < 10) day = '0' + day;
+    
+        document.getElementById("date").value = `${year}-${month}-${day}`;
+      }
+    </script>
+
+    <script>
+      function fillCurrentTime() {
+        const now = new Date();
+        let hours = now.getHours();
+        let minutes = now.getMinutes();
+
+        // Pad hours/minutes with a leading zero if needed
+        if (hours < 10) hours = '0' + hours;
+        if (minutes < 10) minutes = '0' + minutes;
+
+        // Construct a valid 24-hour time string
+        const timeString = `${hours}:${minutes}`;
+        document.getElementById("time").value = timeString;
+      }
+      function toggleDetails(busItem) {
+        const detailsContainer = busItem.querySelector(".bus-details");
+        if (detailsContainer.style.maxHeight === "0px" || !detailsContainer.style.maxHeight) {
+          const scheduleData = busItem.getAttribute("data-schedule");
+          if (!scheduleData) return;
+          const schedule = JSON.parse(scheduleData);
+          let html = `<h4>Full Schedule:</h4><ul>`;
+          schedule.forEach(stop => {
+            html += `<li><strong>${stop.time}</strong> - ${stop.stop}</li>`;
+          });
+          html += "</ul>";
+          detailsContainer.innerHTML = html;
+          detailsContainer.style.display = "block";
+          setTimeout(() => {
+            detailsContainer.style.maxHeight = detailsContainer.scrollHeight + "px";
+            detailsContainer.style.opacity = "1";
+            detailsContainer.style.padding = "10px";
+          }, 10);
+        } else {
+          detailsContainer.style.maxHeight = "0";
+          detailsContainer.style.opacity = "0";
+          detailsContainer.style.padding = "0";
+          setTimeout(() => {
+            detailsContainer.style.display = "none";
+            detailsContainer.innerHTML = "";
+          }, 300);
+        }
+      }
+
+      function swapLocations() {
+        const start = document.getElementById("start_location");
+        const end = document.getElementById("end_location");
+        [start.value, end.value] = [end.value, start.value];
+      }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const busList = document.getElementById("bus-list");
+  const showMoreBtn = document.getElementById("show-more-btn");
+  if (busList && showMoreBtn) {
+    const busItems = Array.from(busList.querySelectorAll(".bus-item"));
+    const separators = Array.from(busList.querySelectorAll(".separator"));
+    const maxVisible = 4;
+
+    // Hide all bus items after the first 4
+    for (let i = maxVisible; i < busItems.length; i++) {
+      busItems[i].style.display = "none";
+    }
+
+    // Function: show separator only if followed by a visible bus
+    function updateSeparators() {
+      separators.forEach(sep => {
+        let next = sep.nextElementSibling;
+        let shouldShow = false;
+        while (next) {
+          if (next.classList.contains("bus-item") && next.style.display !== "none") {
+            shouldShow = true;
+            break;
+          }
+          next = next.nextElementSibling;
+        }
+        sep.style.display = shouldShow ? "block" : "none";
+      });
+    }
+
+    // Initial check
+    updateSeparators();
+
+    // Toggle logic
+    window.toggleBusList = function () {
+      const isExpanded = showMoreBtn.getAttribute("data-expanded") === "true";
+
+      for (let i = maxVisible; i < busItems.length; i++) {
+        busItems[i].style.display = isExpanded ? "none" : "block";
+      }
+
+      updateSeparators();
+
+      showMoreBtn.textContent = isExpanded ? "Show More" : "Show Less";
+      showMoreBtn.setAttribute("data-expanded", String(!isExpanded));
+    };
+  }
+});
+    </script>
+
+    <script>
+      // Reset site function
+      function resetSite() {
+        window.location.href = '/'; // Adjust as needed
+      }
+
+      // Settings panel toggle
+      document.getElementById("settings-btn").addEventListener("click", function(e) {
+        e.stopPropagation();
+        const panel = document.getElementById("settings-panel");
+        panel.classList.toggle("active");
+      });
+
+        document.getElementById("settings-panel").addEventListener("click", function(e) {
+        e.stopPropagation();
+      });
+
+
+
+      // Close the settings panel when clicking outside of it
+      document.addEventListener("click", function() {
+        const panel = document.getElementById("settings-panel");
+        panel.classList.remove("active");
+      });
+    </script>
+    
+    <!-- Your other scripts (fillCurrentDate, fillCurrentTime, etc.) -->
+    </script>
   </div>
 
   <script>
-    function fillCurrentDate() {
-      const now = new Date();
-      const year = now.getFullYear();
-      let month = now.getMonth() + 1;
-      let day = now.getDate();
-  
-      // Pad month/day with a leading zero if needed
-      if (month < 10) month = '0' + month;
-      if (day < 10) day = '0' + day;
-  
-      document.getElementById("date").value = `${year}-${month}-${day}`;
+  document.addEventListener("DOMContentLoaded", () => {
+    const themeSwitch = document.getElementById("theme-switch");
+
+    // Load stored preference
+    if (localStorage.getItem("theme") === "dark") {
+      document.documentElement.setAttribute("data-theme", "dark");
+      themeSwitch.checked = true;
     }
-  </script>
 
-  <script>
-    function fillCurrentTime() {
-      const now = new Date();
-      let hours = now.getHours();
-      let minutes = now.getMinutes();
-
-      // Pad hours/minutes with a leading zero if needed
-      if (hours < 10) hours = '0' + hours;
-      if (minutes < 10) minutes = '0' + minutes;
-
-      // Construct a valid 24-hour time string
-      const timeString = `${hours}:${minutes}`;
-      document.getElementById("time").value = timeString;
-    }
-    function toggleDetails(busItem) {
-      const detailsContainer = busItem.querySelector(".bus-details");
-      if (detailsContainer.style.maxHeight === "0px" || !detailsContainer.style.maxHeight) {
-        const scheduleData = busItem.getAttribute("data-schedule");
-        if (!scheduleData) return;
-        const schedule = JSON.parse(scheduleData);
-        let html = `<h4>Full Schedule:</h4><ul>`;
-        schedule.forEach(stop => {
-          html += `<li><strong>${stop.time}</strong> - ${stop.stop}</li>`;
-        });
-        html += "</ul>";
-        detailsContainer.innerHTML = html;
-        detailsContainer.style.display = "block";
-        setTimeout(() => {
-          detailsContainer.style.maxHeight = detailsContainer.scrollHeight + "px";
-          detailsContainer.style.opacity = "1";
-          detailsContainer.style.padding = "10px";
-        }, 10);
+    themeSwitch.addEventListener("change", () => {
+      if (themeSwitch.checked) {
+        document.documentElement.setAttribute("data-theme", "dark");
+        localStorage.setItem("theme", "dark");
       } else {
-        detailsContainer.style.maxHeight = "0";
-        detailsContainer.style.opacity = "0";
-        detailsContainer.style.padding = "0";
-        setTimeout(() => {
-          detailsContainer.style.display = "none";
-          detailsContainer.innerHTML = "";
-        }, 300);
-      }
-    }
-
-    function swapLocations() {
-      const start = document.getElementById("start_location");
-      const end = document.getElementById("end_location");
-      [start.value, end.value] = [end.value, start.value];
-    }
-
-    document.addEventListener("DOMContentLoaded", function () {
-
-    
-
-      const themeToggle = document.getElementById("theme-switch");
-      const body = document.body;
-      if (localStorage.getItem("theme") === "dark") {
-        body.setAttribute("data-theme", "dark");
-        themeToggle.checked = true;
-      }
-      themeToggle.addEventListener("change", function () {
-        if (themeToggle.checked) {
-          body.setAttribute("data-theme", "dark");
-          localStorage.setItem("theme", "dark");
-        } else {
-          body.removeAttribute("data-theme");
-          localStorage.setItem("theme", "light");
-        }
-      });
-
-      const busList = document.getElementById("bus-list");
-      const showMoreBtn = document.getElementById("show-more-btn");
-      if (busList && showMoreBtn) {
-        const busItems = busList.getElementsByClassName("bus-item");
-        const maxVisible = 4;
-        for (let i = maxVisible; i < busItems.length; i++) {
-          busItems[i].style.display = "none";
-        }
-        window.toggleBusList = function () {
-          const isExpanded = showMoreBtn.getAttribute("data-expanded") === "true";
-          for (let i = maxVisible; i < busItems.length; i++) {
-            busItems[i].style.display = isExpanded ? "none" : "block";
-          }
-          showMoreBtn.textContent = isExpanded ? "Show More" : "Show Less";
-          showMoreBtn.setAttribute("data-expanded", String(!isExpanded));
-        };
+        document.documentElement.removeAttribute("data-theme");
+        localStorage.setItem("theme", "light");
       }
     });
-  </script>
-
-  <script>
-    // Reset site function
-    function resetSite() {
-      window.location.href = '/'; // Adjust as needed
-    }
-
-    // Settings panel toggle
-    document.getElementById("settings-btn").addEventListener("click", function(e) {
-      e.stopPropagation();
-      const panel = document.getElementById("settings-panel");
-      panel.classList.toggle("active");
-    });
-
-      document.getElementById("settings-panel").addEventListener("click", function(e) {
-      e.stopPropagation();
-    });
+  });
+</script>
 
 
 
-    // Close the settings panel when clicking outside of it
-    document.addEventListener("click", function() {
-      const panel = document.getElementById("settings-panel");
-      panel.classList.remove("active");
-    });
-  </script>
-  
-  <!-- Your other scripts (fillCurrentDate, fillCurrentTime, etc.) -->
-  </script>
 
 </body>
 </html>
